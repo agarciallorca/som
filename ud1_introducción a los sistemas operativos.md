@@ -1,4 +1,4 @@
-# UNIDAD 1: Introducción a los Sistemas operativos
+# UNIDAD 1: Introducción a los sistemas operativos
 
 ## 1. EL SISTEMA INFORMÁTICO
 
