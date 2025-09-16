@@ -168,7 +168,7 @@ El proceso está siendo creado.
 #### Preparado (Ready)
 El proceso está esperando a ser asignado a un procesador.
 
-#### En Ejecución (Running)
+#### En Ejecución/Activo (Running)
 Las instrucciones del proceso están siendo ejecutadas.
 
 #### En Espera/Bloqueado (Waiting/Blocked)
