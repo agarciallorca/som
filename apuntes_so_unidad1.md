@@ -185,6 +185,8 @@ El proceso ha finalizado su ejecución.
 - **En Espera → Preparado**: Finalización de E/S o evento esperado
 - **En Ejecución → Terminado**: Finalización del proceso
 
+![Estados de los procesos](/img/ud1_img2.webp "Estados de los procesos")
+
 ### 6.4 Prioridades
 Los procesos pueden tener diferentes niveles de prioridad:
 
