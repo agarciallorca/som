@@ -13,6 +13,8 @@ Constituye la parte física del sistema informático. Incluye:
 - **Dispositivos de salida**: Monitor, impresora, altavoces, etc.
 - **Dispositivos de entrada/salida**: Pantallas táctiles, dispositivos de red, etc.
 
+![Esquema hardware de un sistema informático](/img/ "Esquema hardware de un sistema informático")
+
 ### 1.2 Software
 Es la parte lógica del sistema informático. Se divide en:
 - **Software de sistema**: Programas que gestionan el hardware (sistemas operativos, controladores)
