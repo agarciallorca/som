@@ -454,7 +454,3 @@ Son sistemas diseñados para gestionar transacciones de manera eficiente y segur
 7. ¿Qué ventajas ofrece la multiprogramación frente a la monotarea?
 
 8. Describe la diferencia entre prioridad estática y dinámica en procesos.
-
----
-
-*Material elaborado para Ciclo Formativo de Grado Medio - Sistemas Operativos Monopuesto*
