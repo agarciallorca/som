@@ -1,4 +1,4 @@
-# UNIDAD 1: CARACTERIZACIÓN DE SISTEMAS OPERATIVOS
+# UNIDAD 1: Introducción a los Sistemas operativos
 
 ## 1. EL SISTEMA INFORMÁTICO
 
