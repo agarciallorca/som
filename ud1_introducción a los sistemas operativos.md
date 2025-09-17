@@ -108,7 +108,7 @@ Los sistemas operativos pueden organizarse según diferentes estructuras:
 
 ### 4.5 Por el Propósito
 - **Sistemas de propósito general**: Para uso doméstico y empresarial
-- **Sistemas especializados**: Para aplicaciones específicas (sistemas empotrados, tiempo real)
+- **Sistemas especializados**: Para aplicaciones específicas (sistemas embebidos, tiempo real)
 
 ### 4.6 Por la Portabilidad
 - **Propietarios**: Diseñados para hardware específico
