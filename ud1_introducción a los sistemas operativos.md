@@ -46,6 +46,8 @@ Programas auxiliares para tareas de mantenimiento, diagnóstico y optimización 
 ### 3.1 Definición
 Un **sistema operativo (SO)** es un conjunto de programas que actúa como intermediario entre el usuario y el hardware del ordenador. Su función principal es gestionar de manera eficiente los recursos hardware y proporcionar una interfaz cómoda para el usuario.
 
+![Sistema operativo](/img/ud1_img3.webp "Sistema operativo")
+
 ### 3.2 Objetivos del Sistema Operativo
 - **Comodidad**: Hacer más fácil el uso del ordenador
 - **Eficiencia**: Permitir el uso eficiente de los recursos del sistema
@@ -118,34 +120,34 @@ Los sistemas operativos pueden organizarse según diferentes estructuras:
 
 ## 5. FUNCIONES DEL SISTEMA OPERATIVO. RECURSOS
 
-### 5.1 Gestión de Procesos
+### 5.1 Recursos del Sistema
+Los recursos que gestiona el SO incluyen:
+- **Recursos hardware**: CPU, memoria, dispositivos de E/S
+- **Recursos software**: Archivos, programas, datos
+- **Recursos de red**: Conexiones, ancho de banda
+
+### 5.2 Gestión de Procesos
 - **Creación y terminación** de procesos
 - **Planificación** de la CPU
 - **Sincronización** y comunicación entre procesos
 - **Gestión de interbloqueos** (deadlocks)
 
-### 5.2 Gestión de Memoria
+### 5.3 Gestión de Memoria
 - **Asignación y liberación** de memoria
 - **Control de acceso** a las zonas de memoria
 - **Memoria virtual**: Técnica que permite ejecutar programas más grandes que la memoria física disponible
 
-### 5.3 Gestión del Sistema de Archivos
+### 5.4 Gestión del Sistema de Archivos
 - **Creación y eliminación** de archivos y directorios
 - **Control de acceso** a archivos
 - **Organización** del almacenamiento en disco
 - **Copias de seguridad** y recuperación
 
-### 5.4 Gestión de Entrada/Salida
+### 5.5 Gestión de Entrada/Salida
 - **Control de dispositivos** periféricos
 - **Gestión de interrupciones**
 - **Buffering y caching** para optimizar las operaciones de E/S
 - **Gestión de colas** de peticiones de E/S
-
-### 5.5 Recursos del Sistema
-Los recursos que gestiona el SO incluyen:
-- **Recursos hardware**: CPU, memoria, dispositivos de E/S
-- **Recursos software**: Archivos, programas, datos
-- **Recursos de red**: Conexiones, ancho de banda
 
 ---
 
