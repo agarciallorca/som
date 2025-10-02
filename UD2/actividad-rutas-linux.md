@@ -339,7 +339,3 @@ proyecto_so/
 - `.` - Directorio actual
 - `..` - Directorio padre
 - `-` - Directorio anterior (con cd -)
-
----
-
-**¡Buena suerte con la práctica!** 🐧
