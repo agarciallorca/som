@@ -209,7 +209,7 @@ Realiza las siguientes tareas y anota el comando que utilizas:
 1. Elimina el archivo `script_ejemplo.sh` de `documentos` usando **ruta relativa**
    - Comando: ________________
 
-2. Elimina el directorio vacío `tema2` (dentro de apuntes) usando **ruta relativa**
+2. Elimina el directorio `tema2` (dentro de apuntes) usando **ruta relativa**
    - Comando: ________________
 
 3. Elimina el directorio `temporal` de tu home usando **ruta absoluta**
