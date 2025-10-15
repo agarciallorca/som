@@ -1,13 +1,5 @@
 # ACTIVIDAD PRÁCTICA: IMPORTACIÓN, CLONADO Y EXPORTACIÓN DE MÁQUINAS VIRTUALES
 
-## Información General
-- **Software:** Oracle VM VirtualBox
-- **Sistema Operativo:** Arch Linux
-- **Nivel:** Básico
-- **Duración estimada:** 1-2 horas
-
----
-
 ## Objetivos de la Actividad
 
 Al finalizar esta actividad, serás capaz de:
