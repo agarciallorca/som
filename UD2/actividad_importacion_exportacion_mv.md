@@ -72,11 +72,10 @@ Antes de comenzar, verifica que tienes:
 1. **Abre VirtualBox**
 
 2. **Identifica tu máquina virtual de Arch Linux**
-   - Anota su nombre: _______________________
    - Verifica que funciona correctamente (enciéndela y apágala)
 
 3. **Crea una carpeta de trabajo**
-   - Ubicación recomendada: `~/Documentos/VirtualBox_Exportaciones`
+   - Ubicación: `D:\#tu_usuario#\Exportaciones_VM`
    - Aquí guardarás las exportaciones
 
 ---
@@ -139,12 +138,7 @@ Antes de comenzar, verifica que tienes:
 **Preguntas de reflexión:**
 
 a) ¿Por qué es importante apagar la VM antes de exportar?
-
-_________________________________________________________________
-
 b) ¿Qué ventajas tiene usar formato OVA en lugar de OVF?
-
-_________________________________________________________________
 
 ---
 
@@ -191,12 +185,7 @@ _________________________________________________________________
 **Preguntas de reflexión:**
 
 a) ¿Qué similitudes observas entre el tamaño de la VM original y el clon completo?
-
-_________________________________________________________________
-
 b) ¿Por qué es importante generar nuevas direcciones MAC?
-
-_________________________________________________________________
 
 ---
 
@@ -240,16 +229,8 @@ _________________________________________________________________
 **Preguntas de reflexión:**
 
 a) ¿Qué diferencia notable observas en el tamaño entre el clon completo y el enlazado?
-
-_________________________________________________________________
-
 b) ¿Qué pasaría si eliminas la VM original teniendo un clon enlazado?
-
-_________________________________________________________________
-
 c) ¿Cuál fue más rápido de crear? ¿Por qué?
-
-_________________________________________________________________
 
 ---
 
@@ -311,12 +292,7 @@ _________________________________________________________________
 **Preguntas de reflexión:**
 
 a) ¿La VM importada conserva todos los archivos y configuraciones de la original?
-
-_________________________________________________________________
-
 b) ¿Qué utilidad práctica tiene poder importar/exportar VMs?
-
-_________________________________________________________________
 
 ---
 
@@ -424,28 +400,20 @@ Necesitas crear 5 entornos de prueba idénticos para probar diferentes configura
 
 **¿Qué método usarías? ¿Por qué?**
 
-_________________________________________________________________
-
 ### Caso 2: Backup antes de Actualización
 Vas a actualizar el sistema completo de tu VM de producción y quieres poder volver atrás si algo falla, pero necesitas hacerlo rápido.
 
 **¿Qué método usarías? ¿Por qué?**
-
-_________________________________________________________________
 
 ### Caso 3: Compartir con Compañero
 Tu compañero necesita una copia exacta de tu VM de Arch Linux para trabajar en su ordenador en casa.
 
 **¿Qué método usarías? ¿Por qué?**
 
-_________________________________________________________________
-
 ### Caso 4: Desarrollo con Múltiples Ramas
 Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero todas parten del mismo sistema base.
 
 **¿Qué método usarías? ¿Por qué?**
-
-_________________________________________________________________
 
 ---
 
@@ -472,35 +440,19 @@ _________________________________________________________________
 
 1. **Define con tus propias palabras qué es una máquina virtual exportada.**
 
-   _________________________________________________________________
-
 2. **¿Cuál es la principal diferencia entre un clon completo y uno enlazado?**
-
-   _________________________________________________________________
 
 3. **¿En qué formato se exportan las máquinas virtuales en VirtualBox?**
 
-   _________________________________________________________________
-
 4. **¿Qué ventajas tiene exportar una VM en lugar de copiar simplemente su carpeta?**
-
-   _________________________________________________________________
 
 5. **¿Puedes usar un clon enlazado si eliminas la VM original? ¿Por qué?**
 
-   _________________________________________________________________
-
 6. **¿Qué es mejor para hacer un backup: clon completo, instantánea o exportación? Justifica tu respuesta.**
-
-   _________________________________________________________________
 
 7. **Si quieres distribuir una VM a 30 compañeros de clase, ¿qué método usarías?**
 
-   _________________________________________________________________
-
 8. **¿Qué precauciones debes tomar antes de exportar una VM?**
-
-   _________________________________________________________________
 
 ---
 
@@ -545,18 +497,9 @@ La actividad se evaluará según los siguientes criterios:
 - [VirtualBox Manual - Import/Export](https://www.virtualbox.org/manual/ch01.html#ovf)
 - [VirtualBox Manual - Snapshots](https://www.virtualbox.org/manual/ch01.html#snapshots)
 
-### Atajos de Teclado Útiles
-- `Ctrl + E` - Exportar servicio virtualizado
-- `Ctrl + I` - Importar servicio virtualizado
-- `Ctrl + T` - Tomar instantánea (con VM seleccionada)
-
 ### Consejos Importantes
 - Siempre apaga las VMs antes de clonar o exportar
 - Los clones enlazados son más rápidos pero dependientes
 - Las exportaciones OVA son portables entre hipervisores
 - Las instantáneas son ideales para puntos de restauración rápidos
 - Mantén backups regulares de tus VMs importantes
-
----
-
-**¡Éxito con la práctica!** 💻
