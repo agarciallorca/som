@@ -313,7 +313,7 @@ b) ¿Qué utilidad práctica tiene poder importar/exportar VMs?
 5. Haz clic en **Aceptar**
 
 6. Inicia la VM y realiza algunos cambios:
-   - Crea un archivo en el escritorio
+   - Crea un archivo en tu directorio personal llamado CAMBIOS.txt
    - Instala un paquete pequeño: `sudo pacman -S htop`
 
 7. Apaga la VM
@@ -339,12 +339,7 @@ b) ¿Qué utilidad práctica tiene poder importar/exportar VMs?
 **Preguntas de reflexión:**
 
 a) ¿Qué diferencia hay entre una instantánea y un clon?
-
-_________________________________________________________________
-
 b) ¿Cuándo usarías una instantánea en lugar de un clon?
-
-_________________________________________________________________
 
 ---
 
@@ -370,12 +365,7 @@ Exportar solo el clon completo con sus instantáneas.
 **Responde:**
 
 a) ¿Qué diferencia de tamaño hay entre `ArchLinux_original.ova` y `ArchLinux_Con_Snapshots.ova`?
-
-_________________________________________________________________
-
 b) ¿Por qué existe esa diferencia?
-
-_________________________________________________________________
 
 ---
 
@@ -453,21 +443,6 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
 7. **Si quieres distribuir una VM a 30 compañeros de clase, ¿qué método usarías?**
 
 8. **¿Qué precauciones debes tomar antes de exportar una VM?**
-
----
-
-## CRITERIOS DE EVALUACIÓN
-
-La actividad se evaluará según los siguientes criterios:
-
-| Criterio | Puntuación |
-|----------|------------|
-| Exportación correcta de VM | 20% |
-| Creación de clones (completo y enlazado) | 25% |
-| Importación exitosa de VM | 20% |
-| Gestión de instantáneas | 15% |
-| Respuestas a preguntas de reflexión | 10% |
-| Casos prácticos resueltos | 10% |
 
 ---
 
