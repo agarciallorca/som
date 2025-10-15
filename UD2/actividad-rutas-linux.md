@@ -171,7 +171,7 @@ Realiza las siguientes tareas y anota el comando que utilizas:
 2. Crea un directorio llamado `configuracion` en `~/proyecto_so` usando **ruta absoluta**
    - Comando: ________________
 
-3. Crea un archivo llamado `resumen.txt` en el directorio actual
+3. Crea un archivo llamado `resumen.txt` en el directorio `tema2` usando **ruta relativa**
    - Comando: ________________
 
 4. Crea un archivo llamado `README.txt` en `~/proyecto_so` usando **ruta absoluta**
