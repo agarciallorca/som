@@ -266,85 +266,9 @@ Un **sistema de archivos** es la forma en que el sistema operativo organiza y ge
 
 ---
 
-## 8. TRANSACCIONES. SISTEMAS TRANSACCIONALES
+## 8. SISTEMAS OPERATIVOS ACTUALES
 
-### 8.1 Concepto de Transacción
-Una **transacción** es una secuencia de operaciones que se ejecutan como una unidad indivisible. Todas las operaciones de la transacción deben completarse exitosamente o ninguna debe tener efecto.
-
-### 8.2 Propiedades ACID
-Las transacciones deben cumplir las propiedades ACID:
-
-#### Atomicidad (Atomicity)
-- Una transacción es indivisible
-- O se ejecutan todas las operaciones o ninguna
-
-#### Consistencia (Consistency)
-- La transacción debe llevar el sistema de un estado válido a otro estado válido
-
-#### Aislamiento (Isolation)
-- Las transacciones concurrentes no deben interferir entre sí
-
-#### Durabilidad (Durability)
-- Una vez confirmada, la transacción debe persistir ante fallos del sistema
-
-### 8.3 Sistemas Transaccionales
-Son sistemas diseñados para gestionar transacciones de manera eficiente y segura:
-
-#### Características
-- **Control de concurrencia**: Gestión de múltiples transacciones simultáneas
-- **Recuperación ante fallos**: Capacidad de restaurar el sistema tras errores
-- **Logging**: Registro de todas las operaciones para recuperación
-- **Bloqueos**: Mecanismos para evitar conflictos entre transacciones
-
-#### Ejemplos de Uso
-- **Bases de datos**: Sistemas de gestión de bases de datos (SGBD)
-- **Sistemas bancarios**: Transferencias de dinero
-- **Comercio electrónico**: Procesamiento de pedidos
-- **Sistemas de reservas**: Hoteles, vuelos, entradas
-
----
-
-## 9. EVOLUCIÓN DE LOS SISTEMAS OPERATIVOS
-
-### 9.1 Primera Generación (1940-1955)
-- **Características**: Sin sistema operativo
-- **Programación**: Directa en lenguaje máquina
-- **Procesamiento**: Un programa a la vez
-- **Ejemplo**: ENIAC, máquinas de válvulas
-
-### 9.2 Segunda Generación (1955-1965)
-- **Características**: Sistemas por lotes (batch)
-- **Procesamiento**: Grupos de trabajos similares
-- **Avances**: Primeros lenguajes de programación
-- **Limitaciones**: No interacción directa con el usuario
-
-### 9.3 Tercera Generación (1965-1980)
-- **Características**: Multiprogramación y tiempo compartido
-- **Avances**: 
-  - Varios programas en memoria simultáneamente
-  - Interacción directa usuario-computadora
-  - Desarrollo de UNIX
-- **Ejemplos**: IBM System/360, UNIX
-
-### 9.4 Cuarta Generación (1980-presente)
-- **Características**: Computadoras personales e interfaces gráficas
-- **Avances**:
-  - Interfaces gráficas de usuario (GUI)
-  - Redes de computadoras
-  - Internet
-- **Ejemplos**: MS-DOS, Windows, macOS, Linux
-
-### 9.5 Tendencias Actuales
-- **Sistemas móviles**: Android, iOS
-- **Computación en la nube**: Virtualización, contenedores
-- **Internet de las cosas (IoT)**: Sistemas embebidos
-- **Inteligencia artificial**: Optimización automática
-
----
-
-## 10. SISTEMAS OPERATIVOS ACTUALES
-
-### 10.1 Sistemas Operativos de Escritorio
+### 8.1 Sistemas Operativos de Escritorio
 
 #### Microsoft Windows
 - **Versiones actuales**: Windows 10, Windows 11
@@ -370,7 +294,7 @@ Son sistemas diseñados para gestionar transacciones de manera eficiente y segur
   - Excelente seguridad
   - Múltiples entornos gráficos
 
-### 10.2 Sistemas Operativos Móviles
+### 8.2 Sistemas Operativos Móviles
 
 #### Android
 - **Desarrollador**: Google
@@ -388,7 +312,7 @@ Son sistemas diseñados para gestionar transacciones de manera eficiente y segur
   - Ecosistema cerrado pero integrado
   - App Store
 
-### 10.3 Sistemas Operativos de Servidor
+### 8.3 Sistemas Operativos de Servidor
 
 #### Windows Server
 - **Características**:
@@ -410,7 +334,7 @@ Son sistemas diseñados para gestionar transacciones de manera eficiente y segur
   - Excelente estabilidad
   - Soporte para hardware específico
 
-### 10.4 Tendencias y Tecnologías Emergentes
+### 8.4 Tendencias y Tecnologías Emergentes
 
 #### Virtualización
 - **VMware**, **Hyper-V**, **VirtualBox**
@@ -453,10 +377,4 @@ Son sistemas diseñados para gestionar transacciones de manera eficiente y segur
 
 4. Compara las características de FAT32 y NTFS.
 
-5. Explica las propiedades ACID de las transacciones.
-
-6. Menciona tres sistemas operativos actuales para escritorio y sus principales características.
-
-7. ¿Qué ventajas ofrece la multiprogramación frente a la monotarea?
-
-8. Describe la diferencia entre prioridad estática y dinámica en procesos.
+5. Menciona tres sistemas operativos actuales para escritorio y sus principales características.
