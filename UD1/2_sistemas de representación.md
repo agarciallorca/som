@@ -1046,28 +1046,6 @@ IP en hexadecimal: C0.A8.01.64
 
 ---
 
-### Ejercicio 12: Capacidad de almacenamiento
-
-**Enunciado:** Una memoria USB tiene capacidad de 16 GB. ¿Cuántos MB y bytes son?
-
-**Solución:**
-```
-16 GB a MB:
-16 × 1.024 = 16.384 MB
-
-16 GB a bytes:
-16.384 MB × 1.024 KB/MB = 16.777.216 KB
-16.777.216 KB × 1.024 bytes/KB = 17.179.869.184 bytes
-
-Aproximadamente: 17,18 mil millones de bytes
-```
-
-**Respuesta:**
-- **16.384 MB**
-- **17.179.869.184 bytes** (aproximadamente 17,18 mil millones)
-
----
-
 ## 10. EJERCICIOS PROPUESTOS
 
 ### Nivel Básico: Conversiones Simples
