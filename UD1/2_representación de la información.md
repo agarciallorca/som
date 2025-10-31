@@ -1049,7 +1049,7 @@ IP en hexadecimal: C0.A8.01.64
 
 ## 10. EJERCICIOS PROPUESTOS
 
-### Nivel Básico: Conversiones Simples
+### Nivel Básico
 
 **Ejercicio 1:** Convierte los siguientes números binarios a decimal:
 - a) 1010₂
@@ -1080,10 +1080,6 @@ IP en hexadecimal: C0.A8.01.64
 - b) 777₈
 - c) 100₈
 - d) 456₈
-
----
-
-### Nivel Intermedio: Conversiones Múltiples
 
 **Ejercicio 6:** Convierte los siguientes números binarios a hexadecimal:
 - a) 10101010₂
@@ -1122,7 +1118,7 @@ IP en hexadecimal: C0.A8.01.64
 **Ejercicio 11:** Análisis de colores HTML
 - a) Descompón el color #3498DB en sus componentes RGB (en decimal)
 - b) Crea el código hexadecimal para un color con R:200, G:100, B:50
-- c) ¿Qué color representa #808080? (pista: todos los componentes iguales)
+- c) ¿Qué color representa #808080?
 
 **Ejercicio 12:** Permisos de archivos en Linux
 - a) Un archivo tiene permisos 755₈. Escribe los permisos en formato rwx
@@ -1134,30 +1130,13 @@ IP en hexadecimal: C0.A8.01.64
 - b) Convierte la IP 255.255.255.0 (máscara común) a binario
 - c) Convierte la IP en binario 11000000.10101000.00000001.00000001 a decimal
 
-**Ejercicio 14:** Capacidades de almacenamiento
-- a) ¿Cuántos valores diferentes puede representar un byte (8 bits)?
-- b) Un disco duro tiene 2 TB. ¿Cuántos GB son exactamente?
-- c) ¿Cuántos bytes hay en 512 MB?
-
-**Ejercicio 15:** Dirección MAC
+**Ejercicio 14:** Dirección MAC
 - La dirección MAC A4:C3:F0:2E:7B:19:
 - a) Convierte cada octeto a decimal
 - b) Convierte cada octeto a binario
 - c) ¿Cuántos bits tiene una dirección MAC completa?
 
-**Ejercicio 16:** Conversiones encadenadas
+**Ejercicio 15:** Conversiones encadenadas
 - a) Convierte 237₁₀ a binario, luego a hexadecimal
 - b) Convierte 1AF₁₆ a binario, luego a octal
 - c) Convierte 456₈ a binario, luego a decimal
-
-**Ejercicio 17:** Códigos ASCII
-- La letra 'A' tiene código ASCII 65₁₀:
-- a) Exprésalo en binario
-- b) Exprésalo en hexadecimal
-- c) La letra 'a' (minúscula) tiene código 97₁₀. ¿Cuál es la diferencia en decimal entre 'A' y 'a'?
-
-**Ejercicio 18:** Análisis de puertos
-- El puerto HTTPS es 443₁₀:
-- a) Conviértelo a binario
-- b) Conviértelo a hexadecimal
-- c) ¿Cuántos bits se necesitan para representar cualquier número de puerto (0-65535)?
