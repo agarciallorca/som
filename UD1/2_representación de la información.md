@@ -642,13 +642,14 @@ Resultado: 075₈ = 75₈
 | **Decimal → Binario** | Divisiones sucesivas entre 2 |
 | **Binario → Hexadecimal** | Agrupar de 4 en 4 bits |
 | **Hexadecimal → Binario** | Cada dígito hex = 4 bits |
-| **Decimal → Hexadecimal** | Divisiones sucesivas entre 16 |
-| **Hexadecimal → Decimal** | Multiplicar cada dígito por potencia de 16 y sumar |
+| **Decimal → Hexadecimal** | Convertir vía binario |
+| **Hexadecimal → Decimal** | Convertir vía binario |
 | **Binario → Octal** | Agrupar de 3 en 3 bits |
 | **Octal → Binario** | Cada dígito octal = 3 bits |
-| **Decimal → Octal** | Divisiones sucesivas entre 8 |
-| **Octal → Decimal** | Multiplicar cada dígito por potencia de 8 y sumar |
+| **Decimal → Octal** | Convertir vía binario |
+| **Octal → Decimal** | Convertir vía binario |
 | **Octal ↔ Hexadecimal** | Convertir vía binario |
+| **Hexadecimal ↔ Octal** | Convertir vía binario |
 
 ---
 
