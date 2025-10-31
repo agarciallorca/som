@@ -431,30 +431,48 @@ Resultado: 1011111010101101₂
 
 ---
 
-### 7.5 De Decimal a Hexadecimal
+### 7.5 De Decimal a Hexadecimal (vía binario)
 
-**Método:** Divisiones sucesivas entre 16, anotando los restos (convertir a A-F si es necesario).
+**Método:** Convertir primero a binario y luego a hexadecimal.
 
 **Ejemplo 1:** Convertir **2748₁₀** a hexadecimal
 
 ```
-División      Cociente    Resto (Hex)
-2748 ÷ 16  =    171         12 (C)    ← Dígito menos significativo
- 171 ÷ 16  =     10         11 (B)
-  10 ÷ 16  =      0         10 (A)    ← Dígito más significativo
+División    Cociente    Resto
+2748 ÷ 2  =      1374         0    ← LSB (bit menos significativo)
+1374 ÷ 2  =      687         0
+687 ÷ 2  =       343         1
+343 ÷ 2  =       171         1
+171 ÷ 2  =       85         1
+85 ÷ 2  =       42         1
+42 ÷ 2  =       21         0
+21 ÷ 2  =       10         1
+10 ÷ 2  =       5         0
+5 ÷ 2  =       2         1
+2 ÷ 2  =       1         0  
+1 ÷ 2  =       0         1    ← MSB (bit más significativo)
 
-Resultado (leer de abajo hacia arriba): ABC₁₆
+Resultado (leer de abajo hacia arriba): 101010111100₂
 ```
-
-**Verificación:** A×256 + B×16 + C×1 = 10×256 + 11×16 + 12 = 2560 + 176 + 12 = 2748 ✓
+Conversión a hexadecimal agrupando de 4 en 4 bits desde la derecha: ABC₁₆
+```
 
 **Ejemplo 2:** Convertir **255₁₀** a hexadecimal
 
 ```
-255 ÷ 16 = 15    resto 15 (F)
- 15 ÷ 16 = 0     resto 15 (F)
+División    Cociente    Resto
+255 ÷ 2  =      127        1    ← LSB (bit menos significativo)
+127 ÷ 2  =      63         1
+63 ÷ 2  =       31         1
+31 ÷ 2  =       15         1
+15 ÷ 2  =       7          1
+7 ÷ 2  =        3          1
+3 ÷ 2  =        1          1
+1 ÷ 2  =        0          1    ← MSB (bit más significativo)
 
-Resultado: FF₁₆
+Resultado (leer de abajo hacia arriba): 11111111₂
+```
+Conversión a hexadecimal: FF₁₆
 ```
 
 ---
