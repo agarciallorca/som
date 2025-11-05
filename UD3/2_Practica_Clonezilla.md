@@ -53,7 +53,7 @@
 
 Para esta práctica utilizaremos **VirtualBox** con el siguiente esquema:
 
-![Esquema de la práctica](../img/Esquema_practica_clonezilla.jpg)
+![Esquema de la práctica](../img/Esquema_practica_clonezilla.png)
 
 ---
 
