@@ -369,21 +369,7 @@ b) ¿Por qué existe esa diferencia?
 
 ---
 
-## PARTE 4: TABLA COMPARATIVA
-
-Completa la siguiente tabla con tus observaciones:
-
-| Característica | Clon Completo | Clon Enlazado | Exportación/Importación |
-|----------------|---------------|---------------|-------------------------|
-| **Espacio en disco** | _________ GB | _________ GB | _________ GB |
-| **Tiempo de creación** | _________ min | _________ min | _________ min |
-| **Independencia de la original** | Sí / No | Sí / No | Sí / No |
-| **Portabilidad** | Alta / Media / Baja | Alta / Media / Baja | Alta / Media / Baja |
-| **Uso recomendado** | ____________ | ____________ | ____________ |
-
----
-
-## PARTE 5: CASOS PRÁCTICOS
+## PARTE 4: CASOS PRÁCTICOS
 
 ### Caso 1: Laboratorio de Pruebas
 Necesitas crear 5 entornos de prueba idénticos para probar diferentes configuraciones de red, pero luego vas a modificar cada uno de forma diferente.
@@ -407,7 +393,7 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
 
 ---
 
-## PARTE 6: LIMPIEZA Y ORGANIZACIÓN
+## PARTE 5: LIMPIEZA Y ORGANIZACIÓN
 
 ### Tarea Final
 
@@ -419,50 +405,17 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
    - Mueve todos los archivos .ova a una carpeta de backups
    - Nómbralos con fecha: `ArchLinux_2024-XX-XX.ova`
 
-3. **Crea un documento de inventario:**
-   - Lista todas las VMs que tienes
-   - Anota su propósito
-   - Anota su tamaño en disco
-
----
-
-## PARTE 7: PREGUNTAS DE EVALUACIÓN
-
-1. **Define con tus propias palabras qué es una máquina virtual exportada.**
-
-2. **¿Cuál es la principal diferencia entre un clon completo y uno enlazado?**
-
-3. **¿En qué formato se exportan las máquinas virtuales en VirtualBox?**
-
-4. **¿Qué ventajas tiene exportar una VM en lugar de copiar simplemente su carpeta?**
-
-5. **¿Puedes usar un clon enlazado si eliminas la VM original? ¿Por qué?**
-
-6. **¿Qué es mejor para hacer un backup: clon completo, instantánea o exportación? Justifica tu respuesta.**
-
-7. **Si quieres distribuir una VM a 30 compañeros de clase, ¿qué método usarías?**
-
-8. **¿Qué precauciones debes tomar antes de exportar una VM?**
-
 ---
 
 ## ENTREGA DE LA ACTIVIDAD
 
 **Debes entregar:**
 
-1. **Documento de respuestas** con:
+**Documento de respuestas** con:
    - Todas las preguntas de reflexión respondidas
    - Tabla comparativa completada
    - Casos prácticos resueltos
    - Preguntas de evaluación respondidas
-
-2. **Capturas de pantalla:**
-   - Proceso de exportación (ventana de configuración)
-   - Lista de VMs mostrando original, clones e importada
-   - Panel de instantáneas con las capturas creadas
-   - Tamaño de los archivos .ova en el explorador de archivos
-
-3. **Inventario de VMs** (documento de texto o hoja de cálculo)
 
 ---
 
