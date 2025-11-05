@@ -413,9 +413,7 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
 
 **Documento de respuestas** con:
    - Todas las preguntas de reflexión respondidas
-   - Tabla comparativa completada
    - Casos prácticos resueltos
-   - Preguntas de evaluación respondidas
 
 ---
 
