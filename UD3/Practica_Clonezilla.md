@@ -65,6 +65,7 @@ Descarga la ISO de Clonezilla del servidor de aula
 
 ### Paso 2: Montar ISO en VirtualBox
 
+#### En la máquina origen
 1. Con la VM apagada, ve a **Configuración → Almacenamiento**
 2. Haz clic en el icono de CD (vacío)
 3. En el menú de la derecha, haz clic en el icono de CD
@@ -84,8 +85,6 @@ Descarga la ISO de Clonezilla del servidor de aula
 
 ### Objetivo
 Crear una imagen de respaldo del disco completo de nuestra máquina virtual.
-
-### Tiempo estimado: 45 minutos
 
 ### Paso 1: Arrancar Clonezilla
 
@@ -113,42 +112,16 @@ Crear una imagen de respaldo del disco completo de nuestra máquina virtual.
 
 ### Paso 2: Modo de Clonezilla
 
-Verás dos opciones principales:
-
-```
-┌──────────────────────────────────────┐
-│ device-image  disk/partition to/from │
-│               image                  │
-│                                      │
-│ device-device disk/partition to disk/│
-│               partition directly     │
-└──────────────────────────────────────┘
-```
-
-**Selecciona:** `device-image` (disco/partición a imagen)
-**Presiona:** Enter
+Como queremos crear la imagen del disco de la máquina elegiremos la opción `device-image` (disco/partición a imagen)
 
 ### Paso 3: Ubicación para guardar la imagen
 
-Se pregunta dónde guardar la imagen:
-
-```
-┌──────────────────────────────────────┐
-│ local_dev  Use local device         │
-│ ssh_server Use SSH server            │
-│ samba_server Use Samba server        │
-│ nfs_server Use NFS server            │
-└──────────────────────────────────────┘
-```
-
-**Selecciona:** `local_dev` (dispositivo local)
-**Presiona:** Enter
+Clonezilla nos pregunta dónde guardar la imagen. En nuestro caso vamos a utilizar el disco local (disco externo simulado) que hemos conectado en el proceso de configuración de la máquina virtual de origen. Por lo tanto seleccionamos la opción `local_dev` (dispositivo local).
 
 ### Paso 4: Montar dispositivo de almacenamiento
 
 1. **Insertar dispositivo**
-   - El sistema pide que insertes el USB/disco externo donde guardar la imagen
-   - En VirtualBox, podemos usar una carpeta compartida o añadir un disco virtual
+   - El sistema pide que insertes el USB/disco externo donde guardar la imagen. Como ya lo tenemos conectado previamente, no debemos hacer nada.
    - Presiona **Enter** cuando esté listo
 
 2. **Espera a que detecte los dispositivos**
@@ -160,9 +133,9 @@ Se pregunta dónde guardar la imagen:
      ```
      sda1  vfat  500M
      sda2  ext4  19.5G  ← (tu disco principal)
-     sdb1  ext4  20G    ← (disco adicional o compartida)
+     sdb1  ntfs  128G   ← (disco externo adicional)
      ```
-   - **Selecciona** la partición donde guardar (sdb1 en este ejemplo)
+   - **Selecciona** la partición correspondiente al disco externo. En este ejemplo será `sdb1`
    - **Presiona:** Enter
 
 4. **Confirmar directorio**
@@ -177,35 +150,11 @@ Se pregunta dónde guardar la imagen:
 
 ### Paso 5: Modo de operación
 
-```
-┌──────────────────────────────────────┐
-│ Beginner   Beginner mode: Accept    │
-│            default options           │
-│                                      │
-│ Expert     Expert mode: More options │
-└──────────────────────────────────────┘
-```
-
-Para esta práctica:
-**Selecciona:** `Beginner` (modo principiante)
-**Presiona:** Enter
+Para esta práctica utilizaremos el modo `Beginner` (modo principiante).
 
 ### Paso 6: Tipo de clonación
 
-```
-┌──────────────────────────────────────┐
-│ savedisk   Save local disk as image  │
-│ saveparts  Save local partition(s)   │
-│            as image                  │
-│ restoredisk Restore image to local   │
-│             disk                     │
-│ restoreparts Restore image to local  │
-│              partition(s)            │
-└──────────────────────────────────────┘
-```
-
-**Selecciona:** `savedisk` (guardar disco completo como imagen)
-**Presiona:** Enter
+Como queremos hacer la imagen del disco completo seleccionaremos la opción `savedisk` (guardar disco completo como imagen). 
 
 **Nota:** También podrías usar `saveparts` si solo quieres clonar una partición específica.
 
@@ -213,7 +162,7 @@ Para esta práctica:
 
 1. **Introducir nombre**
    - Se pedirá un nombre para la imagen
-   - Sugerencia: `2024-11-05-archlinux-disk` (usa fecha y descripción)
+   - Sugerencia: `img-equipo1-2025-11-07` (usa fecha y descripción)
    - **Escribe** el nombre
    - **Presiona:** Enter
 
