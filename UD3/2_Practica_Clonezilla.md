@@ -9,18 +9,18 @@
 ### Características principales
 
 #### Ventajas
-✓ **Gratuito y de código abierto**
-✓ **Soporta múltiples sistemas de archivos:** ext2, ext3, ext4, FAT, NTFS, HFS+, etc.
-✓ **Clona solo bloques usados** (ahorra espacio y tiempo)
-✓ **Compresión de imágenes** para ahorrar espacio
-✓ **Diferentes modos de clonación:** disco a disco, disco a imagen
-✓ **Multicast** para clonar múltiples equipos simultáneamente
+✓ **Gratuito y de código abierto**\
+✓ **Soporta múltiples sistemas de archivos:** ext2, ext3, ext4, FAT, NTFS, HFS+, etc.\
+✓ **Clona solo bloques usados** (ahorra espacio y tiempo)\
+✓ **Compresión de imágenes** para ahorrar espacio\
+✓ **Diferentes modos de clonación:** disco a disco, disco a imagen\
+✓ **Multicast** para clonar múltiples equipos simultáneamente\
 ✓ **Arranque desde USB o CD/DVD**
 
 #### Limitaciones
-✗ Interfaz en modo texto (puede resultar intimidante al principio)
-✗ No permite operaciones en caliente (el sistema debe estar apagado)
-✗ Requiere conocimientos básicos de particiones y sistemas de archivos
+✗ Interfaz en modo texto (puede resultar intimidante al principio)\
+✗ No permite operaciones en caliente (el sistema debe estar apagado)\
+✗ Requiere conocimientos básicos de particiones y sistemas de archivos\
 
 ### Versiones de Clonezilla
 
