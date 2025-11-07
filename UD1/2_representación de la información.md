@@ -375,7 +375,61 @@ Resultado: 1100100₂
 
 ---
 
-### 7.3 De Binario a Hexadecimal
+### 7.3 De Binario a Octal
+
+**Método:** Agrupar de 3 en 3 bits (de derecha a izquierda) y convertir cada grupo.
+
+**Ejemplo 1:** Convertir **101110011₂** a octal
+
+```
+Paso 1: Agrupar de 3 en 3 desde la derecha
+        101  110  011
+
+Paso 2: Convertir cada grupo
+         5    6    3
+
+Resultado: 563₈
+```
+
+**Ejemplo 2:** Convertir **11010101₂** a octal
+
+```
+Agrupar:     011  010  101
+Convertir:    3    2    5
+
+Resultado: 325₈
+```
+
+---
+
+### 7.4 De Octal a Binario
+
+**Método:** Convertir cada dígito octal a su equivalente de 3 bits.
+
+**Ejemplo 1:** Convertir **726₈** a binario
+
+```
+Octal:        7         2         6
+              ↓         ↓         ↓
+Binario:     111       010       110
+
+Resultado: 111010110₂
+```
+
+**Ejemplo 2:** Convertir **345₈** a binario
+
+```
+3 = 011
+4 = 100
+5 = 101
+
+Resultado: 011100101₂ = 11100101₂
+```
+
+---
+
+
+### 7.5 De Binario a Hexadecimal
 
 **Método:** Agrupar de 4 en 4 bits (de derecha a izquierda) y convertir cada grupo a su equivalente hexadecimal.
 
@@ -403,7 +457,7 @@ Resultado: DA₁₆
 
 ---
 
-### 7.4 De Hexadecimal a Binario
+### 7.6 De Hexadecimal a Binario
 
 **Método:** Convertir cada dígito hexadecimal a su equivalente de 4 bits.
 
@@ -431,133 +485,10 @@ Resultado: 1011111010101101₂
 
 ---
 
-### 7.5 De Decimal a Hexadecimal (vía binario)
+### 7.7 De Octal a Decimal
 
-**Método:** Convertir primero a binario y luego a hexadecimal.
-
-**Ejemplo 1:** Convertir **2748₁₀** a hexadecimal
-
-```
-División    Cociente    Resto
-2748 ÷ 2  =   1374         0    ← LSB (bit menos significativo)
-1374 ÷ 2  =    687         0
- 687 ÷ 2  =    343         1
- 343 ÷ 2  =    171         1
- 171 ÷ 2  =     85         1
-  85 ÷ 2  =     42         1
-  42 ÷ 2  =     21         0
-  21 ÷ 2  =     10         1
-  10 ÷ 2  =      5         0
-   5 ÷ 2  =      2         1
-   2 ÷ 2  =      1         0  
-   1 ÷ 2  =      0         1    ← MSB (bit más significativo)
-
-Resultado (leer de abajo hacia arriba): 101010111100₂
-```
-Conversión a hexadecimal agrupando de 4 en 4 bits desde la derecha: ABC₁₆
-```
-
-**Ejemplo 2:** Convertir **255₁₀** a hexadecimal
-
-```
-División    Cociente    Resto
-255 ÷ 2  =     127        1    ← LSB (bit menos significativo)
-127 ÷ 2  =      63        1
- 63 ÷ 2  =      31        1
- 31 ÷ 2  =      15        1
- 15 ÷ 2  =       7        1
-  7 ÷ 2  =       3        1
-  3 ÷ 2  =       1        1
-  1 ÷ 2  =       0        1    ← MSB (bit más significativo)
-
-Resultado (leer de abajo hacia arriba): 11111111₂
-```
-Conversión a hexadecimal: FF₁₆
-```
-
----
-
-### 7.6 De Hexadecimal a Decimal
-
-**Método:** Multiplicar cada dígito por su peso (potencia de 16) y sumar.
-
-**Ejemplo 1:** Convertir **1F4₁₆** a decimal
-
-```
-Hexadecimal:    1        F        4
-                ↓        ↓        ↓
-Potencias:    16²      16¹      16⁰
-                ↓        ↓        ↓
-Valores:      256       16        1
-                ↓        ↓        ↓
-Cálculo:    1×256 + 15×16 + 4×1
-              256  +  240  +  4   = 500₁₀
-```
-
-**Ejemplo 2:** Convertir **A0B₁₆** a decimal
-
-```
-A×256 + 0×16 + B×1 = 10×256 + 0 + 11 = 2560 + 11 = 2571₁₀
-```
-
----
-
-### 7.7 De Binario a Octal
-
-**Método:** Agrupar de 3 en 3 bits (de derecha a izquierda) y convertir cada grupo.
-
-**Ejemplo 1:** Convertir **101110011₂** a octal
-
-```
-Paso 1: Agrupar de 3 en 3 desde la derecha
-        101  110  011
-
-Paso 2: Convertir cada grupo
-         5    6    3
-
-Resultado: 563₈
-```
-
-**Ejemplo 2:** Convertir **11010101₂** a octal
-
-```
-Agrupar:     011  010  101
-Convertir:    3    2    5
-
-Resultado: 325₈
-```
-
----
-
-### 7.8 De Octal a Binario
-
-**Método:** Convertir cada dígito octal a su equivalente de 3 bits.
-
-**Ejemplo 1:** Convertir **726₈** a binario
-
-```
-Octal:        7         2         6
-              ↓         ↓         ↓
-Binario:     111       010       110
-
-Resultado: 111010110₂
-```
-
-**Ejemplo 2:** Convertir **345₈** a binario
-
-```
-3 = 011
-4 = 100
-5 = 101
-
-Resultado: 011100101₂ = 11100101₂
-```
-
----
-
-### 7.9 De Octal a Decimal
-
-**Método:** Multiplicar cada dígito por su peso (potencia de 8) y sumar.
+**Método 1:** Multiplicar cada dígito por su peso (potencia de 8) y sumar.
+**Método 2:** Convertir primero a binario y luego a decimal.
 
 **Ejemplo 1:** Convertir **345₈** a decimal
 
@@ -575,14 +506,16 @@ Cálculo:   3×64  +  4×8  +  5×1
 **Ejemplo 2:** Convertir **777₈** a decimal
 
 ```
-7×64 + 7×8 + 7×1 = 448 + 56 + 7 = 511₁₀
+Binario: 111111111₂
+Decimal: 256 + 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 511₁₀
 ```
 
 ---
 
 ### 7.10 De Decimal a Octal
 
-**Método:** Divisiones sucesivas entre 8, anotando los restos.
+**Método 1:** Divisiones sucesivas entre 8, anotando los restos.
+**Método 2:** Convertir primero a binario y luego a octal.
 
 **Ejemplo 1:** Convertir **253₁₀** a octal
 
@@ -600,11 +533,62 @@ Resultado (leer de abajo hacia arriba): 375₈
 **Ejemplo 2:** Convertir **100₁₀** a octal
 
 ```
-100 ÷ 8 = 12    resto 4
- 12 ÷ 8 = 1     resto 4
-  1 ÷ 8 = 0     resto 1
-
+Binario: 1100100₂
 Resultado: 144₈
+```
+
+---
+
+### 7.11 De Hexadecimal a Decimal
+
+**Método 1:** Multiplicar cada dígito por su peso (potencia de 16) y sumar.
+**Método 2:** Convertir primero a binario y luego a decimal.
+
+**Ejemplo 1:** Convertir **1F4₁₆** a decimal
+
+```
+Hexadecimal:    1        F        4
+                ↓        ↓        ↓
+Potencias:    16²      16¹      16⁰
+                ↓        ↓        ↓
+Valores:      256       16        1
+                ↓        ↓        ↓
+Cálculo:    1×256 + 15×16 + 4×1
+              256  +  240  +  4   = 500₁₀
+```
+
+**Ejemplo 2:** Convertir **A0B₁₆** a decimal
+
+```
+Binario: 101000001011₂
+Decimal: 2048 + 512 + 8 + 2 + 1 = 2571₁₀
+```
+
+---
+
+### 7.12 De Decimal a Hexadecimal
+
+**Método 1:** Divisiones sucesivas entre 16, anotando los restos.
+**Método 2:** Convertir primero a binario y luego a hexadecimal.
+
+**Ejemplo 1:** Convertir **2748₁₀** a hexadecimal
+
+```
+División      Cociente    Resto (Hex)
+2748 ÷ 16  =    171         12 (C)    ← Dígito menos significativo
+ 171 ÷ 16  =     10         11 (B)
+  10 ÷ 16  =      0         10 (A)    ← Dígito más significativo
+
+Resultado (leer de abajo hacia arriba): ABC₁₆
+```
+
+**Verificación:** A×256 + B×16 + C×1 = 10×256 + 11×16 + 12 = 2560 + 176 + 12 = 2748 ✓
+
+**Ejemplo 2:** Convertir **255₁₀** a hexadecimal
+
+```
+Binario: 11111111₂
+Hexadecimal: FF₁₆
 ```
 
 ---
@@ -658,14 +642,14 @@ Resultado: 075₈ = 75₈
 |------------------|--------|
 | **Binario → Decimal** | Multiplicar cada bit por potencia de 2 y sumar |
 | **Decimal → Binario** | Divisiones sucesivas entre 2 |
-| **Binario → Hexadecimal** | Agrupar de 4 en 4 bits |
-| **Hexadecimal → Binario** | Cada dígito hex = 4 bits |
-| **Decimal → Hexadecimal** | Convertir vía binario |
-| **Hexadecimal → Decimal** | Convertir vía binario |
 | **Binario → Octal** | Agrupar de 3 en 3 bits |
 | **Octal → Binario** | Cada dígito octal = 3 bits |
-| **Decimal → Octal** | Convertir vía binario |
-| **Octal → Decimal** | Convertir vía binario |
+| **Binario → Hexadecimal** | Agrupar de 4 en 4 bits |
+| **Hexadecimal → Binario** | Cada dígito hex = 4 bits |
+| **Decimal → Octal** | Divisiones sucesivas entre 8 / Convertir vía binario |
+| **Octal → Decimal** | Multiplicar cada dígito por potencia de 8 y sumar / Convertir vía binario |
+| **Decimal → Hexadecimal** | Divisiones sucesivas entre 16 / Convertir vía binario |
+| **Hexadecimal → Decimal** | Multiplicar cada dígito por potencia de 16 y sumar / Convertir vía binario |
 | **Octal ↔ Hexadecimal** | Convertir vía binario |
 | **Hexadecimal ↔ Octal** | Convertir vía binario |
 
