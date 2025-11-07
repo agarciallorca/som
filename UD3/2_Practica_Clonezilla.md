@@ -49,7 +49,7 @@
 
 ## 2. PREPARACIÓN DEL ENTORNO
 
-### Escenario de práctica recomendado
+### Escenario de práctica
 
 Para esta práctica utilizaremos **VirtualBox** con el siguiente esquema:
 
