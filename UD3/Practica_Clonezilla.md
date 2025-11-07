@@ -97,18 +97,13 @@ Crear una imagen de respaldo del disco completo de nuestra máquina virtual.
    - Opción recomendada: **Clonezilla live (Default settings, VGA 800x600)**
 
 3. **Seleccionar idioma**
-   - Usa las flechas del teclado
-   - Selecciona **Español** o **English** (según prefieras)
-   - Presiona **Enter**
+   - Usa las flechas del teclado y selecciona **Español** o **English** (según prefieras)
 
 4. **Seleccionar distribución de teclado**
-   - Selecciona **Don't touch keymap** (no cambiar distribución)
-   - O elige tu distribución específica
-   - Presiona **Enter**
+   - Selecciona **Don't touch keymap** (no cambiar distribución) o elige tu distribución específica
 
 5. **Iniciar Clonezilla**
-   - Se mostrará: "Start Clonezilla"
-   - Presiona **Enter**
+   - Elige la opción "Start Clonezilla"
 
 ### Paso 3: Modo de Clonezilla
 
