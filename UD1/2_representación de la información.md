@@ -1138,10 +1138,10 @@ IP en hexadecimal: C0.A8.01.64
 - b) Crea el código hexadecimal para un color con R:200, G:100, B:50
 - c) ¿Qué color representa #808080?
 
-**Ejercicio 12:** Permisos de archivos en Linux
-- a) Un archivo tiene permisos 755₈. Escribe los permisos en formato rwx
-- b) ¿Qué número octal corresponde a permisos rw-r--r--?
-- c) Convierte el permiso 777₈ a binario
+~~**Ejercicio 12:** Permisos de archivos en Linux~~
+~~- a) Un archivo tiene permisos 755₈. Escribe los permisos en formato rwx~~
+~~- b) ¿Qué número octal corresponde a permisos rw-r--r--?~~
+~~- c) Convierte el permiso 777₈ a binario~~
 
 **Ejercicio 13:** Direcciones IP
 - a) Convierte la IP 10.0.0.1 a binario completo
