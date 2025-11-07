@@ -20,7 +20,7 @@
 #### Limitaciones
 ✗ Interfaz en modo texto (puede resultar intimidante al principio)\
 ✗ No permite operaciones en caliente (el sistema debe estar apagado)\
-✗ Requiere conocimientos básicos de particiones y sistemas de archivos\
+✗ Requiere conocimientos básicos de particiones y sistemas de archivos
 
 ### Versiones de Clonezilla
 
