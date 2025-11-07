@@ -160,7 +160,7 @@ Como queremos hacer la imagen del disco completo seleccionaremos la opción `sav
 
 ### Paso 8: Nombre de la imagen
 
-Se pedirá un nombre para la imagen. Escribe por ejemplo `img-equipo1-aaaa-mm-dd` (siendo aaaa el año, mm el mes y dd el día de la fecha de realización de la imagen) y pulsa Enter.
+Se pedirá un nombre para la imagen. Escribe por ejemplo `img-maquina1-aaaa-mm-dd` (siendo aaaa el año, mm el mes y dd el día de la fecha de realización de la imagen) y pulsa Enter.
 
 ### Paso 8: Seleccionar disco origen
 
@@ -229,4 +229,4 @@ La máquina se apagará automáticamente después de un tiempo de espera, ya que
 
 ### Resultado esperado
 
-En el disco externo simulado deberías tener una carpeta llamada `img-equipo1-aaaa-mm-dd` con los ficheros que componen la imagen del disco completo.
+En el disco externo simulado deberías tener una carpeta llamada `img-maquina1-aaaa-mm-dd` con los ficheros que componen la imagen del disco completo.
