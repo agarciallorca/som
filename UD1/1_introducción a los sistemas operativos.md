@@ -142,7 +142,6 @@ Los recursos que gestiona el SO incluyen:
 ### 5.5 Gestión de Entrada/Salida
 - **Control de dispositivos** periféricos
 - **Gestión de interrupciones**
-- **Buffering y caching** para optimizar las operaciones de E/S
 - **Gestión de colas** de peticiones de E/S
 
 ---
