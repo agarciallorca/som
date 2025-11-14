@@ -329,24 +329,6 @@ Un **sistema de archivos** es la forma en que el sistema operativo organiza y ge
   - Excelente estabilidad
   - Soporte para hardware específico
 
-### 8.4 Tendencias y Tecnologías Emergentes
-
-#### Virtualización
-- **VMware**, **Hyper-V**, **VirtualBox**
-- Permite ejecutar múltiples SO en un mismo hardware
-
-#### Contenedores
-- **Docker**, **Kubernetes**
-- Virtualización a nivel de aplicación
-
-#### Computación en la Nube
-- **Amazon AWS**, **Microsoft Azure**, **Google Cloud**
-- Sistemas operativos optimizados para servicios en la nube
-
-#### Internet de las Cosas (IoT)
-- **Sistemas embebidos** con SO específicos
-- **Tiempo real** y bajo consumo energético
-
 ---
 
 ## RESUMEN DE CONCEPTOS CLAVE
