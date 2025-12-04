@@ -33,4 +33,15 @@ Usted ha sido contratado como asistente en un departamento que maneja la documen
 El resultado de la actividad es la propia estructura de carpetas y archivos modificada en el sistema. Para la evaluación, entregue lo siguiente:
 
 1.  La **ruta completa** de la carpeta **`GESTION_DOCUMENTAL_PROYECTOS`**.
-2.
+2.  La **captura de pantalla** de la búsqueda avanzada realizada en el paso 4.
+
+---
+
+### Criterios de Puntuación (Rúbrica de Evaluación)
+
+| Elemento a Evaluar | Puntuación Máxima | Criterios de Logro |
+| :--- | :--- | :--- |
+| **Estructura Jerárquica** | 20% | Creación correcta de las 7 carpetas con los nombres exactos y en la jerarquía solicitada. |
+| **Manejo de Archivos** | 30% | Ejecución correcta de las operaciones de **mover**, **copiar** y **renombrar** según las especificaciones. |
+| **Compresión y Atributos** | 30% | Compresión adecuada de la carpeta en formato ZIP y aplicación correcta del **atributo de solo lectura**. |
+| **Eliminación y Búsqueda** | 20% | Eliminación correcta de la carpeta no necesaria y uso eficiente de la herramienta de **búsqueda avanzada** (evidenciado por la captura). |
