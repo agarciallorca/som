@@ -30,7 +30,7 @@ Usted ha sido contratado como asistente en un departamento que maneja la documen
 
 ### 📦 Entrega
 
-El resultado de la actividad es la propia estructura de carpetas y archivos modificada en el sistema. Para la evaluación, entregue lo siguiente:
+El resultado de la actividad es la propia estructura de carpetas y archivos modificada en el sistema. Para la evaluación, muestra al profesor lo siguiente:
 
 1.  La **ruta completa** de la carpeta **`GESTION_DOCUMENTAL_PROYECTOS`**.
 2.  La **captura de pantalla** de la búsqueda avanzada realizada en el paso 4.
