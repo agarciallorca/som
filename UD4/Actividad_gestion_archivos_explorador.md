@@ -1,5 +1,3 @@
-### Tarea a Realizar
-
 Usted ha sido contratado como asistente en un departamento que maneja la documentación de tres proyectos diferentes. Su tarea es organizar la información según las normativas internas, garantizando la seguridad y la accesibilidad de ciertos documentos clave.
 
 #### Pasos a Seguir
