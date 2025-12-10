@@ -49,6 +49,6 @@ Entrega **dos capturas de pantalla** que cumplan con los requisitos de la **Capt
 | :--- | :--- | :--- |
 | **Parte 1: Tarea de Aplicaciones** | Se crea con el nombre, disparador y ambas acciones (`notepad.exe`, `calc.exe`) correctas. Tarea deshabilitada. | 50% |
 | **Parte 2: Tarea de Comandos** | Se crea con el nombre y disparador correctos. El comando `shutdown` se configura como programa y los argumentos `-s -t 120` se añaden correctamente. Tarea deshabilitada. | 50% |
-| **Puntuación Total** | **100%** | |
+| **Puntuación Total** | |**100%** |
 | **Nivel Básico (50%)** | Logras completar todos los pasos de una de las dos tareas de forma correcta, o completas ambas tareas con errores en los nombres, disparadores o la inclusión de argumentos. | |
 | **Nivel No Alcanzado (0%)** | No logras crear ninguna de las tareas o no demuestras el uso de disparadores y acciones. | |
