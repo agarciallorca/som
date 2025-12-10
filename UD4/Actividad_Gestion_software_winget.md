@@ -1,7 +1,7 @@
 Tienes que demostrar tu habilidad para gestionar las siguientes utilidades utilizando **exclusivamente** la línea de comandos de Windows (Terminal/PowerShell/CMD) y la herramienta **Winget**.
 
-* **Windows PowerToys** (Instalar).
-* **Notepad++** (Instalar, Actualizar, Desinstalar).
+* **Windows PowerToys**
+* **Notepad++**
 
 #### Pasos a Seguir
 
@@ -18,7 +18,7 @@ Tienes que demostrar tu habilidad para gestionar las siguientes utilidades utili
 
 3.  **Gestión de actualizaciones:**
     * **3.1. Listar actualizaciones pendientes:** Lista todas las aplicaciones instaladas en el sistema que tienen una actualización disponible a través de Winget.
-      * *Comando:* `winget upgrade`
+      * *Comando:* `winget list --upgrade-available`
     * **3.2. Aplicar actualización:** Si Winget indica que hay alguna aplicación que pueda actualizar, ejecuta el comando para actualizar esa aplicación específica.
       * *Comando a utilizar (si aplica)*: `winget upgrade [ID de la app a actualizar]`
     * **3.2. Aplicar actualización:** Actualiza **solo** la aplicación **Notepad++** a la última versión disponible (asumiendo que hay una más reciente o forzando la actualización).
