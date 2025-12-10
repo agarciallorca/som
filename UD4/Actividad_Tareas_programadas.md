@@ -43,7 +43,7 @@ Entrega **dos capturas de pantalla** que cumplan con los requisitos de la **Capt
 
 ---
 
-### Rúbrica de Evaluación Sugerida para el Criterio (h) (Final)
+### Rúbrica de Evaluación
 
 | Elemento | Nivel de Logro | Puntuación Máxima |
 | :--- | :--- | :--- |
