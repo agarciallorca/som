@@ -5,7 +5,7 @@ Tu tarea es configurar el sistema operativo de manera óptima para recibir actua
 1.  **Configuración de Horario Laboral:**
     * Accede a **Configuración** > **Windows Update**.
     * Localiza la opción para configurar las **Horas activas** (o Horas de actividad).
-    * Configura tu horario activo (el período en el que no quieres reinicios automáticos) para que vaya desde las **09:00 AM** hasta las **17:00 PM** (5:00 PM).
+    * Configura tu horario activo (el período en el que no quieres reinicios automáticos) para que vaya desde las **08:00** hasta las **15:30**.
     * **Captura 1:** Realiza una captura de pantalla en la que se aprecie el **horario activo** configurado.
 
 2.  **Configuración de Opciones Avanzadas:**
