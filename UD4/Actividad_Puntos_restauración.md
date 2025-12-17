@@ -4,10 +4,10 @@ Tu tarea es demostrar el ciclo completo de recuperación del sistema: crear un p
 
 1.  **Estado Inicial y Creación de Punto Estable:**
     * **1.1. Verificación:** Accede a las propiedades del sistema y verifica que la **Protección del Sistema** esté **activada** para la unidad principal (C:). Si no lo está, actívala.
-    * **1.2. Punto de Restauración:** Crea un nuevo punto de restauración manual.
+    * **1.2. Prueba:** Crea en el escritorio un archivo de texto llamado **`ANTES_DEL_FALLO.txt`** con el texto "Este archivo debe desaparecer".
+    * **1.3. Punto de Restauración:** Crea un nuevo punto de restauración manual.
       * **Nombre:** Ponle el nombre: **`PUNTO_LIMPIO_TU_NOMBRE`**.
-    * **1.3. Prueba:** Crea en el escritorio un archivo de texto llamado **`ANTES_DEL_FALLO.txt`** con el texto "Este archivo debe desaparecer".
-
+    
 2.  **Provocación del Fallo (Cambio Indeseado):**
     * **2.1. Cambio Visual:** Cambia el fondo de escritorio.
     * **2.2. Cambio Crítico (Fallo Simulado):** Deshabilita el servicio de **Cola de impresión (Spooler)** de forma permanente (tipo de inicio "Deshabilitado") para simular un fallo grave en la gestión de servicios.
@@ -21,7 +21,7 @@ Tu tarea es demostrar el ciclo completo de recuperación del sistema: crear un p
 
 4.  **Verificación Final:**
     * Una vez que la máquina virtual se haya reiniciado y la restauración haya finalizado, verifica lo siguiente:
-        * El **Fondo de escritorio y el Tema** deben haber vuelto a la configuración anterior al fallo (Paso 2.1).
+        * El **Fondo de escritorio** deben haber vuelto a la configuración anterior al fallo (Paso 2.1).
         * El archivo **`ANTES_DEL_FALLO.txt`** debe **haber reaparecido** en el escritorio.
         * El servicio de **Cola de impresión** debe haber vuelto a su estado original (probablemente "Automático").
     * **Captura:** Realiza capturas de pantalla que muestren claramente el archivo **`ANTES_DEL_FALLO.txt`**, el fondo de escritorio restaurado y el servicio restarurado a su configuración original.
