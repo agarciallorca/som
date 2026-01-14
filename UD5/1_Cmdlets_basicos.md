@@ -103,19 +103,6 @@ Test-Path -Path "C:\datos.txt"
 # Verificar si existe una carpeta
 Test-Path -Path "C:\MisCarpetas"
 
-# Usar en una condición
-if (Test-Path "importante.txt") {
-    Write-Output "El archivo existe"
-} else {
-    Write-Output "El archivo NO existe"
-}
-
-# Verificar antes de copiar
-if (Test-Path "origen.txt") {
-    Copy-Item "origen.txt" -Destination "C:\Backup"
-    Write-Output "Copia realizada"
-}
-
 # Verificar múltiples archivos con comodines
 Test-Path "*.txt"
 # Devuelve True si existe al menos un archivo .txt
@@ -335,12 +322,6 @@ Write-Output "Hola, mundo"
 # Mostrar múltiples líneas
 Write-Output "Línea 1" "Línea 2" "Línea 3"
 
-# Mostrar variables
-$nombre = "Juan"
-Write-Output "Hola, $nombre"
-
-# Usar en el pipeline
-Write-Output "Proceso completado" | Out-File resultado.txt
 ```
 
 **Alias comunes:** `echo`, `write`
@@ -377,11 +358,6 @@ Get-ItemProperty -Path "C:\MisCarpetas"
 # Ver fecha de última modificación
 (Get-ItemProperty "datos.txt").LastWriteTime
 
-# Ver si un archivo es de solo lectura
-$props = Get-ItemProperty "importante.txt"
-if ($props.Attributes -match "ReadOnly") {
-    Write-Output "El archivo es de solo lectura"
-}
 ```
 
 **Propiedades comunes:**
@@ -503,15 +479,6 @@ Get-Help about_redirection
 
 # Ver ayuda en ventana separada (más cómodo)
 Get-Help Get-Content -ShowWindow
-```
-
-**Actualizar la ayuda (requiere conexión a internet):**
-```powershell
-# Actualizar toda la ayuda (ejecutar como Administrador)
-Update-Help
-
-# Actualizar ayuda de un módulo específico
-Update-Help -Module Microsoft.PowerShell.Management
 ```
 
 **Alias comunes:** `help`, `man`
