@@ -13,7 +13,7 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
 2.  **Creación:** Crea el perfil de red estática. 
     *Usa los siguientes datos (o los que te asigne el profesor):*
     * **Nombre de conexión:** `OFICINA`
-    * **IP:** `172.30.135.XXX/24`
+    * **IP:** `172.30.135.2XX/24` siendo `XX` el número de tu ordenador.
     * **Puerta de enlace:** `172.30.135.1`
     * **DNS:** `8.8.8.8`
 
