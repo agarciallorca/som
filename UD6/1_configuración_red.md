@@ -15,11 +15,11 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
     * **Nombre de conexión:** `OFICINA`
     * **IP:** `172.30.135.2XX/24` siendo `XX` el número de tu ordenador.
     * **Puerta de enlace:** `172.30.135.1`
-    * **DNS:** `8.8.8.8`
+    * **DNS:** `10.239.3.7`
 
     **Comando a ejecutar:**
     ```bash
-    sudo nmcli con add type ethernet con-name OFICINA ifname [TU_INTERFAZ] ipv4.method manual ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns "8.8.8.8"
+    sudo nmcli con add type ethernet con-name OFICINA ifname [TU_INTERFAZ] ipv4.method manual ipv4.addresses [TU_IP] ipv4.gateway [TU_PUERTA_ENLACE] ipv4.dns [TU_DNS]
     ```
 3.  **Activación:** Levanta la conexión y verifica la IP.
     ```bash
