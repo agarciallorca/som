@@ -3,14 +3,36 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
 
 ---
 
-## Tarea 1: Perfil "OFICINA" (IP estática mediante terminal)
-*Escenario: Trabajas en una oficina técnica donde necesitas una IP fija para que otros compañeros puedan acceder a tus servicios locales.*
+## Tarea 0: Preparación
 
-1.  **Identificación:** Averigua el nombre de tu interfaz de red (ej: `enp0s3` o `eth0`).
+Antes de crear perfiles nuevos, debemos asegurarnos de que no haya configuraciones antiguas "peleándose" por el control de la tarjeta de red.
+
+1.  **Identifica tu hardware:** Averigua cómo se llama tu tarjeta de red en este sistema. Anótalo, lo necesitarás en todos los pasos siguientes.
     ```bash
     nmcli device status
     ```
-2.  **Creación:** Crea el perfil de red estática. 
+2.  **Lista las conexiones actuales:**
+    Mira qué perfiles existen ya en el sistema (probablemente uno creado por el instalador de Debian).
+    ```bash
+    nmcli connection show
+    ```
+3.  **Limpia el historial:**
+    Borra cualquier conexión "Cableada" o "Wired" que aparezca en la lista para empezar desde cero.
+    ```bash
+    # Sustituye "Nombre" por el nombre que aparezca en la lista anterior
+    sudo nmcli con delete "Wired connection 1"
+    ```
+4.  **Verificación de seguridad:**
+    Asegúrate de que tu dispositivo aparece ahora como **"desconectado"** (en rojo) y no como **"sin gestión"**.
+    ```bash
+    nmcli device status
+    ```
+---
+
+## Tarea 1: Perfil "OFICINA" (IP estática mediante terminal)
+*Escenario: Trabajas en una oficina técnica donde necesitas una IP fija para que otros compañeros puedan acceder a tus servicios locales.*
+
+1.  **Creación:** Crea el perfil de red estática. 
     *Usa los siguientes datos (o los que te asigne el profesor):*
     * **Nombre de conexión:** `OFICINA`
     * **IP:** `172.30.135.2XX/24` siendo `XX` el número de tu ordenador.
@@ -21,7 +43,7 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
     ```bash
     sudo nmcli con add type ethernet con-name OFICINA ifname [TU_INTERFAZ] ipv4.method manual ipv4.addresses [TU_IP] ipv4.gateway [TU_PUERTA_ENLACE] ipv4.dns [TU_DNS]
     ```
-3.  **Activación:** Levanta la conexión y verifica la IP.
+2.  **Activación:** Levanta la conexión y verifica la IP.
     ```bash
     sudo nmcli con up OFICINA
     ip a
@@ -75,6 +97,8 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
 2. Si ejecutas `nmcli connection show`, ¿de qué color aparece la conexión activa?
 3. ¿Qué sucede si activas el perfil `OFICINA` pero el cable de red está desconectado?
 4. ¿Cómo borrarías el perfil `MOVIL` por completo usando la terminal?
+5. ¿Qué pasa si intentas activar el perfil OFICINA pero no has desactivado el perfil MOVIL?
+6. Mira el contenido de la carpeta /etc/NetworkManager/system-connections/. ¿Ves tus perfiles de conexión ahí? ¿Qué extensión tienen? Abre uno de ellos con `nano`.
 
 ---
 
