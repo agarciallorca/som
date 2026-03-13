@@ -56,9 +56,9 @@ Configurar la máquina Debian 12 con dos perfiles de red conmutables (uno estát
 ---
 
 ## Tarea 4: Modificación y Prioridades
-1.  **Modificar DNS:** Cambia el DNS del perfil `OFICINA` a `9.9.9.9` sin borrar la conexión:
+1.  **Modificar DNS:** Cambia el DNS del perfil `OFICINA` a `8.8.4.4` sin borrar la conexión:
     ```bash
-    sudo nmcli con mod OFICINA ipv4.dns "9.9.9.9"
+    sudo nmcli con mod OFICINA ipv4.dns "8.8.8.8,8.8.4.4"
     sudo nmcli con up OFICINA
     ```
 2.  **Prioridad:** Configura el perfil `OFICINA` para que tenga prioridad sobre el `MOVIL` (auto-conexión).
