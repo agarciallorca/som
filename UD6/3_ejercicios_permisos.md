@@ -1,6 +1,6 @@
 # Actividades: Permisos y propiedad en Linux
 
-### 1. El Juego de los Números (Conversión Rápida)
+### 1. Conversión entre notación simbólica y octal
 Traduce estos códigos numéricos a notación de letras (`rwx`) o viceversa:
 
 * **755** $\rightarrow$ `___ ___ ___`  *(Ejemplo: rwx r-x r-x)*
