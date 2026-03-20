@@ -65,6 +65,7 @@ Modifica **qué** se puede hacer con el archivo.
 * `chmod 755 archivo` → Dueño hace todo, los demás solo leen y entran.
 * `chmod 644 archivo` → Dueño lee/escribe, los demás solo leen. (Estándar para archivos).
 * `chmod -R 755 carpeta` → Aplica los permisos a la carpeta **y a todo su contenido** (Recursivo).
+* `chmod u+x archivo` → Dueño puede ejecutar un archivo. (Un script, por ejemplo).
 
 ### Cambiar propiedad (`chown`)
 Modifica **de quién** es el archivo. Requiere `sudo`.
