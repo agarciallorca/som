@@ -38,11 +38,11 @@ En Linux, los permisos se representan con números del 0 al 7. Solo tienes que s
 
 ## 3. Notación simbólica
 
-En Linux, los permisos también se pueden conceder, retirar o asignar de forma individual sin modificar el resto de ámbitos:
+En Linux, los permisos también se pueden conceder, retirar o asignar de forma individual sin modificar el resto de ámbitos (**u**, **g**, **o**):
 
-* **+** = Concede un permiso
-* **-** = Retira un permiso
-* **=** = Asigna un permiso
+* **+** Concede un permiso
+* **-** Retira un permiso
+* **=** Asigna un permiso
 
 ### Ejemplos:
 
