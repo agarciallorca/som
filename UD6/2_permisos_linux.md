@@ -1,4 +1,4 @@
-# 🛡️ Cheat sheet: Permisos y Propiedad en Linux
+# Cheat sheet: Permisos y propiedad en Linux
 
 ---
 
