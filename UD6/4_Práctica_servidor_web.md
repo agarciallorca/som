@@ -38,7 +38,7 @@ Vamos a trabajar primero en nuestra carpeta personal para luego "subir" el traba
     ```html
     <html>
       <body>
-        <h1>🚀 Servidor de: [TU NOMBRE]</h1>
+        <h1>Servidor de: [TU NOMBRE]</h1>
         <p>Esta página ha sido configurada desde la terminal de Linux.</p>
       </body>
     </html>
