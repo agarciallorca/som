@@ -1,10 +1,11 @@
 # Comandos de gestión de archivos en Linux
 
-## 1. Repaso: Operaciones Básicas (CRUD)
+## 1. Repaso: operaciones básicas
 En Linux, "todo es un archivo". Antes de avanzar, recuerda los comandos esenciales de manipulación. **Nota:** Bash distingue entre mayúsculas y minúsculas (`Archivo.txt` no es lo mismo que `archivo.txt`).
 
 | Comando | Acción | Ejemplo |
 | :--- | :--- | :--- |
+| `cd` | Cambiar a un directorio | `cd /etc` |
 | `pwd` | **P**rint **W**orking **D**irectory: ¿Dónde estoy? | `pwd` |
 | `ls -lh` | Listar archivos (**l**: formato largo, **h**: tamaño humano) | `ls -lh /var/log` |
 | `cp` | Copiar archivos o carpetas (usa `-r` para carpetas) | `cp nota.txt nota_bak.txt` |
