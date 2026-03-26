@@ -43,7 +43,7 @@ Muestra el final del archivo. Es la herramienta principal para ver lo más recie
 * **Monitorizar un fichero en tiempo real (`tail -f`):** Mantiene el archivo abierto. Si el sistema escribe algo nuevo, aparece en tu pantalla al instante. **Imprescindible para monitorizar servidores.**
   * `sudo tail -f /var/log/apache2/access.log`
 
-### 📍 `wc`
+### `wc`
 Cuenta líneas, palabras o caracteres. Se usa mucho con tuberías (`|`).
 * `wc -l archivo.txt` (Cuenta cuántas líneas tiene el archivo).
 
