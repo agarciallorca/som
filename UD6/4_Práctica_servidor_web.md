@@ -1,10 +1,10 @@
-# 🌐 Práctica: Despliegue de servidor web y gestión de permisos
+# Práctica: Despliegue de servidor web y gestión de permisos
 
 **Objetivo:** Instalar el servidor web Apache2, crear un sitio web personalizado y entender cómo afectan los permisos de Linux a la visibilidad de una web en internet.
 
 ---
 
-## 🛠️ Tarea 1: Instalación del servidor (El entorno)
+## Tarea 1: Instalación del servidor (El entorno)
 
 Antes de publicar nada, necesitamos que nuestra máquina Debian sea capaz de "servir" contenido web.
 
@@ -21,7 +21,7 @@ Antes de publicar nada, necesitamos que nuestra máquina Debian sea capaz de "se
 
 ---
 
-## ✍️ Tarea 2: Creación de tu contenido (En local)
+## Tarea 2: Creación de tu contenido (En local)
 
 Vamos a trabajar primero en nuestra carpeta personal para luego "subir" el trabajo al servidor.
 
@@ -47,7 +47,7 @@ Vamos a trabajar primero en nuestra carpeta personal para luego "subir" el traba
 
 ---
 
-## 🏗️ Tarea 3: Publicación y conflicto de permisos
+## Tarea 3: Publicación y conflicto de permisos
 
 El servidor web busca los archivos en la ruta: `/var/www/html/`. Vamos a mover nuestra web allí.
 
@@ -68,7 +68,7 @@ El servidor web busca los archivos en la ruta: `/var/www/html/`. Vamos a mover n
 
 ---
 
-## 🔐 Tarea 4: Asegurando el acceso
+## Tarea 4: Asegurando el acceso
 
 Si los permisos no son correctos, el navegador mostrará un error **"403 Forbidden"**.
 
@@ -85,7 +85,7 @@ Si los permisos no son correctos, el navegador mostrará un error **"403 Forbidd
 
 ---
 
-## ❓ Cuestionario de control
+## Cuestionario de control
 
 1.  ¿Qué sucede si le quitas el permiso de lectura a `otros` (`chmod 640`) e intentas ver la web desde otro PC?
 2.  ¿En qué carpeta se guardan los archivos que el servidor Apache muestra al mundo?
@@ -93,4 +93,4 @@ Si los permisos no son correctos, el navegador mostrará un error **"403 Forbidd
 
 ---
 
-**ENTREGA:** Captura de pantalla de tu navegador mostrando tu página personalizada con la IP de tu máquina visible.
+**ENTREGA:** Captura de pantalla de tu navegador mostrando tu página personalizada con la IP de tu máquina visible y la respuesta a las preguntas del cuestionario.
