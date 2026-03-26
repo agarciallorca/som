@@ -10,7 +10,7 @@ En Linux, "todo es un archivo". Antes de avanzar, recuerda los comandos esencial
 | `ls -lh` | Listar archivos (**l**: formato largo, **h**: tamaño humano) | `ls -lh /var/log` |
 | `cp` | Copiar archivos o carpetas (usa `-r` para carpetas) | `cp nota.txt nota_bak.txt` |
 | `mv` | Mover o **renombrar** un archivo | `mv archivo.txt documentos/` |
-| `rm` | Eliminar (¡Cuidado! No hay papelera de reciclaje) | `rm -rf carpeta_vieja` |
+| `rm` | Eliminar ficheros o directorios (con -r) | `rm -r carpeta_vieja` |
 | `mkdir` | Crear una carpeta (`-p` para crear rutas completas) | `mkdir -p practicas/linux` |
 
 ---
