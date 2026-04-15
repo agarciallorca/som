@@ -76,7 +76,7 @@ La tubería conecta comandos: la salida del primero es la entrada del segundo. E
 1.  **Búsqueda pesada:** Busca en todo el disco archivos de más de 100MB y oculta los errores de "Permiso denegado".
 2.  **Monitorización:** Deja la pantalla "escuchando" los nuevos accessos al servidor web apache en el archivo `/var/log/apache2/access.log`.
 3.  **Filtrado de usuarios:** El archivo `/etc/passwd` contiene todos los usuarios. Muestra solo las líneas que contengan tu nombre de usuario.
-4.  **Limpieza de config:** Muestra el archivo `/etc/ssh/sshd_config` saltándote todas las líneas que sean comentarios (que empiezan por `#`).
+4.  **Limpieza de config:** Muestra el archivo `/etc/ssh/ssh_config` saltándote todas las líneas que sean comentarios (que empiezan por `#`).
 5.  **Contador de errores:** Cuenta cuántas veces aparece la palabra "Failed" en el log del sistema que devuelve `journalctl`.
 6.  **Contador de logs:** ¿Cómo podrías saber cuántos archivos con extensión `.log` existen dentro de la carpeta `/var/log`?
 7.  **El Sándwich (Nivel 1):** Extrae únicamente la **línea número 15** de un archivo de texto largo.
