@@ -51,9 +51,9 @@ Para un fichero con estos permisos iniciales: `rw- rw- r--`
 | Letras | Resultado | Significado |
 | :--- | :--- | :--- |
 | `u+x` | `rwx rw- r--` | Conceder permiso de ejecución al usuario propietario. |
-| `ug+x` | `rwx rwx r--` | Conceder permiso de lectura al usuario propietario y al grupo. |
-| `o-rx` | `rwx rw- ---` | Quitar permiso de escritura y ejecución al resto de usuarios del sistema (otros). |
-| `ug=rw` | `rw- rw- r--` | Se asignan los permisos de lectura y escritura al usuario y al grupo, para el resto de usuarios queda como estaba. |
+| `ug+x` | `rwx rwx r--` | Conceder permiso de ejecución al usuario propietario y al grupo. |
+| `o-r` | `rwx rw- ---` | Quitar permiso de lectura al resto de usuarios del sistema (otros). |
+| `ug=rwx` | `rwx rwx r--` | Se asignan los permisos de lectura y escritura al usuario y al grupo, para el resto de usuarios queda como estaba. |
 | `a+x` | `rwx rwx r-x` | Se concede permiso de ejecución a todos los ámbitos. |
 
 ---
