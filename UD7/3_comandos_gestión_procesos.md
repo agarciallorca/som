@@ -1,6 +1,6 @@
 # Comandos de gestión de procesos y recursos del sistema
 
-Un técnico de sistemas debe saber qué está ocurriendo en la "mente" del ordenador. En Linux, cada programa en ejecución es un **proceso** con un número de identidad único llamado **PID**.
+Un técnico de sistemas debe saber qué está ocurriendo en el ordenador. En Linux, cada programa en ejecución es un **proceso** con un número de identidad único llamado **PID**.
 
 ---
 
