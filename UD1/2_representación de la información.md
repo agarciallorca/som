@@ -1,6 +1,6 @@
 # UNIDAD 1: Introducción a los sistemas operativos
 
-## 2. REPRESENTACIÓN DE LA INFORMACIÓN Y SISTEMAS DE NUMERACIÓN
+## REPRESENTACIÓN DE LA INFORMACIÓN Y SISTEMAS DE NUMERACIÓN
 
 ## ÍNDICE
 1. Introducción a la representación de la información
