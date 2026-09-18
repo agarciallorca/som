@@ -70,6 +70,7 @@ Interfaz que permite al usuario comunicarse con el sistema operativo mediante:
 #### Programas del Sistema
 Utilidades que realizan funciones comunes de gestión como formatear discos, copiar archivos, etc.
 
+<!--
 ### 3.4 Estructura del Sistema Operativo
 Los sistemas operativos pueden organizarse según diferentes estructuras:
 
@@ -87,7 +88,7 @@ Los sistemas operativos pueden organizarse según diferentes estructuras:
 - Kernel mínimo que proporciona servicios básicos
 - Servicios adicionales en espacio de usuario
 - Mayor estabilidad y seguridad
-
+-->
 ---
 
 ## 4. CLASIFICACIÓN DE LOS SISTEMAS OPERATIVOS
