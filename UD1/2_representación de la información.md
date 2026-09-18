@@ -1,4 +1,6 @@
-# REPRESENTACIÓN DE LA INFORMACIÓN Y SISTEMAS DE NUMERACIÓN
+# UNIDAD 1: Introducción a los sistemas operativos
+
+## 2. REPRESENTACIÓN DE LA INFORMACIÓN Y SISTEMAS DE NUMERACIÓN
 
 ## ÍNDICE
 1. Introducción a la representación de la información
@@ -14,9 +16,9 @@
 
 ---
 
-## 1. INTRODUCCIÓN A LA REPRESENTACIÓN DE LA INFORMACIÓN
+### 1. INTRODUCCIÓN A LA REPRESENTACIÓN DE LA INFORMACIÓN
 
-### ¿Cómo representan información los ordenadores?
+#### ¿Cómo representan información los ordenadores?
 
 Los ordenadores son dispositivos **digitales** que trabajan con señales eléctricas que pueden estar en dos estados:
 - **Presencia de tensión** (generalmente 5V o 3.3V) → Estado **1**
@@ -24,13 +26,13 @@ Los ordenadores son dispositivos **digitales** que trabajan con señales eléctr
 
 Esta característica de dos estados hace que los ordenadores trabajen internamente con el **sistema binario**, que solo utiliza dos dígitos: 0 y 1.
 
-### Bit: La unidad básica
+#### Bit: La unidad básica
 
 Un **bit** (binary digit) es la unidad mínima de información y puede tener dos valores:
 - **0** (apagado, falso, no)
 - **1** (encendido, verdadero, sí)
 
-### De los bits a la información útil
+#### De los bits a la información útil
 
 La cantidad de información que se puede representar depende del número de bits disponibles:
 
@@ -48,24 +50,24 @@ La cantidad de información que se puede representar depende del número de bits
 
 ---
 
-## 2. SISTEMAS DE NUMERACIÓN
+### 2. SISTEMAS DE NUMERACIÓN
 
-### ¿Qué es un sistema de numeración?
+#### ¿Qué es un sistema de numeración?
 
 Un **sistema de numeración** es un conjunto de símbolos y reglas que permiten representar cantidades de forma consistente y única.
 
-### Elementos fundamentales
+#### Elementos fundamentales
 
-#### 1. Base
+##### 1. Base
 Es el número de símbolos diferentes que utiliza el sistema. Determina cuántos dígitos distintos existen.
 
-#### 2. Dígitos
+##### 2. Dígitos
 Son los símbolos utilizados para construir los números. Van desde 0 hasta (base - 1).
 
-#### 3. Valor posicional
+##### 3. Valor posicional
 El valor de cada dígito depende de su posición en el número. Cada posición representa una potencia de la base.
 
-### Sistemas de numeración en informática
+#### Sistemas de numeración en informática
 
 | Sistema | Base | Dígitos | Notación | Uso principal |
 |---------|------|---------|----------|---------------|
@@ -74,7 +76,7 @@ El valor de cada dígito depende de su posición en el número. Cada posición r
 | **Octal** | 8 | 0-7 | 755₈ o 0o755 | Permisos UNIX/Linux |
 | **Hexadecimal** | 16 | 0-9, A-F | 2AF₁₆ o 0x2AF | Direcciones, colores |
 
-### ¿Por qué diferentes sistemas?
+#### ¿Por qué diferentes sistemas?
 
 - **Binario:** Es el lenguaje natural del ordenador (electricidad on/off)
 - **Octal:** Agrupa bits de 3 en 3, más compacto que binario
@@ -83,16 +85,16 @@ El valor de cada dígito depende de su posición en el número. Cada posición r
 
 ---
 
-## 3. SISTEMA DECIMAL (BASE 10)
+### 3. SISTEMA DECIMAL (BASE 10)
 
-### Características
+#### Características
 
 - **Base:** 10
 - **Dígitos:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 - **Sistema posicional:** Cada posición vale 10 veces más que la anterior
 - **Sistema más común:** Es el que utilizamos en la vida diaria
 
-### Valor posicional
+#### Valor posicional
 
 En el número **3.527₁₀**:
 
@@ -106,7 +108,7 @@ Valores:     1000    100     10      1
 Resultado:   3000  + 500  +  20  +  7  = 3.527
 ```
 
-### Fórmula general
+#### Fórmula general
 
 Para cualquier número decimal:
 
@@ -114,7 +116,7 @@ Para cualquier número decimal:
 
 Donde dₙ, dₙ₋₁, ..., d₁, d₀ son los dígitos del número.
 
-### Ejemplo detallado
+#### Ejemplo detallado
 
 **4.806₁₀** = 4×10³ + 8×10² + 0×10¹ + 6×10⁰
            = 4×1000 + 8×100 + 0×10 + 6×1
@@ -123,16 +125,16 @@ Donde dₙ, dₙ₋₁, ..., d₁, d₀ son los dígitos del número.
 
 ---
 
-## 4. SISTEMA BINARIO (BASE 2)
+### 4. SISTEMA BINARIO (BASE 2)
 
-### Características
+#### Características
 
 - **Base:** 2
 - **Dígitos:** 0, 1 (llamados bits)
 - **Sistema fundamental** en informática
 - **Notación:** Se añade subíndice ₂ o prefijo 0b
 
-### Valor posicional
+#### Valor posicional
 
 En el número binario **1101₂**:
 
@@ -146,13 +148,13 @@ Valores:       8      4      2      1
 Resultado:     8  +   4  +   0  +   1  = 13₁₀
 ```
 
-### Tabla de potencias de 2 (memorizar)
+#### Tabla de potencias de 2 (memorizar)
 
 | Posición | 2⁰ | 2¹ | 2² | 2³ | 2⁴ | 2⁵ | 2⁶ | 2⁷ | 2⁸ | 2⁹ | 2¹⁰ |
 |----------|----|----|----|----|----|----|----|----|----|----|-----|
 | **Valor** | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 |
 
-### Tabla de equivalencias (4 bits)
+#### Tabla de equivalencias (4 bits)
 
 | Binario | Decimal | Binario | Decimal |
 |---------|---------|---------|---------|
@@ -165,7 +167,7 @@ Resultado:     8  +   4  +   0  +   1  = 13₁₀
 | 0110 | 6 | 1110 | 14 |
 | 0111 | 7 | 1111 | 15 |
 
-### Ejemplos de números binarios
+#### Ejemplos de números binarios
 
 - **10₂** = 2₁₀
 - **100₂** = 4₁₀
@@ -174,7 +176,7 @@ Resultado:     8  +   4  +   0  +   1  = 13₁₀
 - **11111111₂** = 255₁₀ (valor máximo con 8 bits)
 - **10000000₂** = 128₁₀ (bit más significativo de un byte)
 
-### Terminología importante
+#### Terminología importante
 
 - **Bit más significativo (MSB):** El bit de la izquierda, con mayor valor
 - **Bit menos significativo (LSB):** El bit de la derecha, con menor valor
@@ -182,16 +184,16 @@ Resultado:     8  +   4  +   0  +   1  = 13₁₀
 
 ---
 
-## 5. SISTEMA OCTAL (BASE 8)
+### 5. SISTEMA OCTAL (BASE 8)
 
-### Características
+#### Características
 
 - **Base:** 8
 - **Dígitos:** 0, 1, 2, 3, 4, 5, 6, 7
 - **Notación:** Subíndice ₈ o prefijo 0o
 - **Uso principal:** Permisos de archivos en sistemas UNIX/Linux
 
-### Valor posicional
+#### Valor posicional
 
 En el número octal **753₈**:
 
@@ -205,7 +207,7 @@ Valores:      64      8      1
 Resultado:   448  +  40  +   3  = 491₁₀
 ```
 
-### Relación con el sistema binario
+#### Relación con el sistema binario
 
 **Cada dígito octal equivale exactamente a 3 bits:**
 
@@ -222,7 +224,7 @@ Resultado:   448  +  40  +   3  = 491₁₀
 
 Esta relación hace que sea muy fácil convertir entre binario y octal.
 
-### Aplicación práctica: Permisos en Linux
+#### Aplicación práctica: Permisos en Linux
 
 En sistemas UNIX/Linux, los permisos de archivos se expresan en octal:
 
@@ -248,16 +250,16 @@ Ejemplos:
 
 ---
 
-## 6. SISTEMA HEXADECIMAL (BASE 16)
+### 6. SISTEMA HEXADECIMAL (BASE 16)
 
-### Características
+#### Características
 
 - **Base:** 16
 - **Dígitos:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
 - **Notación:** Subíndice ₁₆, prefijo 0x o #
 - **Muy utilizado** por su compacidad y legibilidad
 
-### Tabla de equivalencias completa
+#### Tabla de equivalencias completa
 
 | Hex | Decimal | Binario (4 bits) | Hex | Decimal | Binario (4 bits) |
 |-----|---------|------------------|-----|---------|------------------|
@@ -270,7 +272,7 @@ Ejemplos:
 | 6 | 6 | 0110 | E | 14 | 1110 |
 | 7 | 7 | 0111 | F | 15 | 1111 |
 
-### Valor posicional
+#### Valor posicional
 
 En el número hexadecimal **2A3F₁₆**:
 
@@ -285,7 +287,7 @@ Cálculo:     8192 + 2560 +   48  +   15  = 10.815₁₀
              (2×4096) (10×256) (3×16) (15×1)
 ```
 
-### Relación con el sistema binario
+#### Relación con el sistema binario
 
 **Cada dígito hexadecimal equivale exactamente a 4 bits:**
 
@@ -300,7 +302,7 @@ Binario:      1010    1111    0011    1001
 Completo:     1010111100111001₂
 ```
 
-### Notaciones comunes
+#### Notaciones comunes
 
 - **Lenguajes de programación (C, C++, Java, Python):** 0x2A
 - **Colores HTML/CSS:** #FF5733
@@ -309,9 +311,9 @@ Completo:     1010111100111001₂
 
 ---
 
-## 7. CONVERSIONES ENTRE SISTEMAS DE NUMERACIÓN
+### 7. CONVERSIONES ENTRE SISTEMAS DE NUMERACIÓN
 
-### 7.1 De Binario a Decimal
+#### 7.1 De Binario a Decimal
 
 **Método:** Multiplicar cada bit por su peso (potencia de 2) y sumar todos los resultados.
 
@@ -339,7 +341,7 @@ Paso 3: Sumar los resultados
 
 ---
 
-### 7.2 De Decimal a Binario
+#### 7.2 De Decimal a Binario
 
 **Método:** Divisiones sucesivas entre 2, anotando los restos. El resultado se lee de abajo hacia arriba.
 
@@ -375,7 +377,7 @@ Resultado: 1100100₂
 
 ---
 
-### 7.3 De Binario a Octal
+#### 7.3 De Binario a Octal
 
 **Método:** Agrupar de 3 en 3 bits (de derecha a izquierda) y convertir cada grupo.
 
@@ -402,7 +404,7 @@ Resultado: 325₈
 
 ---
 
-### 7.4 De Octal a Binario
+#### 7.4 De Octal a Binario
 
 **Método:** Convertir cada dígito octal a su equivalente de 3 bits.
 
@@ -429,7 +431,7 @@ Resultado: 011100101₂ = 11100101₂
 ---
 
 
-### 7.5 De Binario a Hexadecimal
+#### 7.5 De Binario a Hexadecimal
 
 **Método:** Agrupar de 4 en 4 bits (de derecha a izquierda) y convertir cada grupo a su equivalente hexadecimal.
 
@@ -457,7 +459,7 @@ Resultado: DA₁₆
 
 ---
 
-### 7.6 De Hexadecimal a Binario
+#### 7.6 De Hexadecimal a Binario
 
 **Método:** Convertir cada dígito hexadecimal a su equivalente de 4 bits.
 
@@ -485,7 +487,7 @@ Resultado: 1011111010101101₂
 
 ---
 
-### 7.7 De Octal a Decimal
+#### 7.7 De Octal a Decimal
 
 **Método 1:** Multiplicar cada dígito por su peso (potencia de 8) y sumar.
 **Método 2:** Convertir primero a binario y luego a decimal.
@@ -512,7 +514,7 @@ Decimal: 256 + 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 511₁₀
 
 ---
 
-### 7.10 De Decimal a Octal
+#### 7.10 De Decimal a Octal
 
 **Método 1:** Divisiones sucesivas entre 8, anotando los restos.
 **Método 2:** Convertir primero a binario y luego a octal.
@@ -539,7 +541,7 @@ Resultado: 144₈
 
 ---
 
-### 7.11 De Hexadecimal a Decimal
+#### 7.11 De Hexadecimal a Decimal
 
 **Método 1:** Multiplicar cada dígito por su peso (potencia de 16) y sumar.
 **Método 2:** Convertir primero a binario y luego a decimal.
@@ -566,7 +568,7 @@ Decimal: 2048 + 512 + 8 + 2 + 1 = 2571₁₀
 
 ---
 
-### 7.12 De Decimal a Hexadecimal
+#### 7.12 De Decimal a Hexadecimal
 
 **Método 1:** Divisiones sucesivas entre 16, anotando los restos.
 **Método 2:** Convertir primero a binario y luego a hexadecimal.
@@ -593,7 +595,7 @@ Hexadecimal: FF₁₆
 
 ---
 
-### 7.11 De Octal a Hexadecimal (vía binario)
+#### 7.11 De Octal a Hexadecimal (vía binario)
 
 **Método:** Convertir primero a binario y luego a hexadecimal.
 
@@ -615,7 +617,7 @@ Resultado: 1F5₁₆
 
 ---
 
-### 7.12 De Hexadecimal a Octal (vía binario)
+#### 7.12 De Hexadecimal a Octal (vía binario)
 
 **Método:** Convertir primero a binario y luego a octal.
 
@@ -636,7 +638,7 @@ Resultado: 075₈ = 75₈
 
 ---
 
-### 7.13 Tabla resumen de conversiones
+#### 7.13 Tabla resumen de conversiones
 
 | Origen → Destino | Método |
 |------------------|--------|
@@ -655,9 +657,9 @@ Resultado: 075₈ = 75₈
 
 ---
 
-## 8. APLICACIONES PRÁCTICAS EN INFORMÁTICA
+### 8. APLICACIONES PRÁCTICAS EN INFORMÁTICA
 
-### 8.1 Colores en diseño web (HTML/CSS)
+#### 8.1 Colores en diseño web (HTML/CSS)
 
 Los colores se representan en hexadecimal con el formato **#RRGGBB**:
 - **RR:** Componente rojo (00 a FF)
@@ -681,7 +683,7 @@ Los colores se representan en hexadecimal con el formato **#RRGGBB**:
  └└───── RR = 34₁₆ = 52₁₀  (Componente rojo)
 ```
 
-### 8.2 Direcciones IP (IPv4)
+#### 8.2 Direcciones IP (IPv4)
 
 Una dirección IP está formada por 4 octetos (bytes) en notación decimal separados por puntos.
 
@@ -707,7 +709,7 @@ C0.A8.01.FE  (o en forma compacta: C0A801FE)
 - **255.255.255.0** = 11111111.11111111.11111111.00000000 (24 bits activos)
 - **255.255.0.0** = 11111111.11111111.00000000.00000000 (16 bits activos)
 
-### 8.3 Direcciones MAC
+#### 8.3 Direcciones MAC
 
 Las direcciones MAC identifican de forma única cada tarjeta de red y se expresan en hexadecimal.
 
@@ -737,7 +739,7 @@ E7₁₆ = 231₁₀
 2F₁₆ = 47₁₀
 ```
 
-### 8.4 Permisos de archivos en Linux/UNIX
+#### 8.4 Permisos de archivos en Linux/UNIX
 
 Los permisos se expresan en octal con 3 dígitos:
 
@@ -765,7 +767,7 @@ Cada dígito es la suma de:
 5 = 4+1   = 101₂ = r-x (Otros: lectura y ejecución)
 ```
 
-### 8.5 Direcciones de memoria
+#### 8.5 Direcciones de memoria
 
 Las direcciones de memoria en sistemas de 32 o 64 bits se expresan en hexadecimal.
 
@@ -778,7 +780,7 @@ Las direcciones de memoria en sistemas de 32 o 64 bits se expresan en hexadecima
 - Mucho más compacto que binario
 - Más legible que decimal para este propósito
 
-### 8.6 Códigos de caracteres
+#### 8.6 Códigos de caracteres
 
 **ASCII (American Standard Code for Information Interchange):**
 
@@ -792,7 +794,7 @@ Los caracteres se codifican con números que pueden expresarse en diferentes bas
 | Espacio | 32 | 0x20 | 00100000 |
 | Enter | 10 | 0x0A | 00001010 |
 
-### 8.7 Puertos de red
+#### 8.7 Puertos de red
 
 Los puertos de red se numeran de 0 a 65535 (16 bits = 2¹⁶ - 1):
 
@@ -804,7 +806,7 @@ Los puertos de red se numeran de 0 a 65535 (16 bits = 2¹⁶ - 1):
 | SSH | 22 | 0x0016 | Terminal remoto seguro |
 | DNS | 53 | 0x0035 | Resolución nombres |
 
-### 8.8 Códigos de error
+#### 8.8 Códigos de error
 
 Muchos sistemas muestran códigos de error en hexadecimal:
 
@@ -816,9 +818,9 @@ Muchos sistemas muestran códigos de error en hexadecimal:
 
 ---
 
-## 9. EJERCICIOS RESUELTOS
+### 9. EJERCICIOS RESUELTOS
 
-### Ejercicio 1: Binario → Decimal
+#### Ejercicio 1: Binario → Decimal
 
 **Enunciado:** Convertir **11010110₂** a decimal
 
@@ -839,7 +841,7 @@ Cálculo:
 
 ---
 
-### Ejercicio 2: Decimal → Binario
+#### Ejercicio 2: Decimal → Binario
 
 **Enunciado:** Convertir **156₁₀** a binario
 
@@ -863,7 +865,7 @@ Leyendo de abajo hacia arriba: 10011100₂
 
 ---
 
-### Ejercicio 3: Hexadecimal → Binario
+#### Ejercicio 3: Hexadecimal → Binario
 
 **Enunciado:** Convertir **B7₁₆** a binario
 
@@ -880,7 +882,7 @@ B7₁₆ = 1011 0111₂ = 10110111₂
 
 ---
 
-### Ejercicio 4: Binario → Hexadecimal
+#### Ejercicio 4: Binario → Hexadecimal
 
 **Enunciado:** Convertir **11111010101₂** a hexadecimal
 
@@ -899,7 +901,7 @@ Resultado: 7D5₁₆
 
 ---
 
-### Ejercicio 5: Decimal → Hexadecimal
+#### Ejercicio 5: Decimal → Hexadecimal
 
 **Enunciado:** Convertir **1000₁₀** a hexadecimal
 
@@ -918,7 +920,7 @@ Leyendo de abajo hacia arriba: 3E8₁₆
 
 ---
 
-### Ejercicio 6: Hexadecimal → Decimal
+#### Ejercicio 6: Hexadecimal → Decimal
 
 **Enunciado:** Convertir **2AF₁₆** a decimal
 
@@ -938,7 +940,7 @@ Cálculo:
 
 ---
 
-### Ejercicio 7: Octal → Decimal
+#### Ejercicio 7: Octal → Decimal
 
 **Enunciado:** Convertir **756₈** a decimal
 
@@ -958,7 +960,7 @@ Cálculo:
 
 ---
 
-### Ejercicio 8: Binario → Octal
+#### Ejercicio 8: Binario → Octal
 
 **Enunciado:** Convertir **11010110₂** a octal
 
@@ -977,7 +979,7 @@ Resultado: 326₈
 
 ---
 
-### Ejercicio 9: Color HTML
+#### Ejercicio 9: Color HTML
 
 **Enunciado:** El color naranja en HTML se representa como #FFA500. ¿Cuántos niveles de rojo, verde y azul tiene?
 
@@ -998,7 +1000,7 @@ A5₁₆ = 10×16 + 5 = 165₁₀ (Verde medio)
 
 ---
 
-### Ejercicio 10: Permisos Linux
+#### Ejercicio 10: Permisos Linux
 
 **Enunciado:** Un archivo tiene permisos **644₈**. ¿Qué puede hacer cada tipo de usuario?
 
@@ -1017,7 +1019,7 @@ A5₁₆ = 10×16 + 5 = 165₁₀ (Verde medio)
 
 ---
 
-### Ejercicio 11: Dirección IP
+#### Ejercicio 11: Dirección IP
 
 **Enunciado:** Convierte la IP **192.168.1.100** a binario y hexadecimal
 
@@ -1049,9 +1051,9 @@ IP en hexadecimal: C0.A8.01.64
 
 ---
 
-## 10. EJERCICIOS PROPUESTOS
+### 10. EJERCICIOS PROPUESTOS
 
-### Nivel Básico
+#### Nivel Básico
 
 **Ejercicio 1:** Convierte los siguientes números binarios a decimal:
 - a) 1010₂
@@ -1115,7 +1117,7 @@ IP en hexadecimal: C0.A8.01.64
 
 ---
 
-### Nivel Avanzado: Aplicaciones Prácticas
+#### Nivel Avanzado: Aplicaciones Prácticas
 
 **Ejercicio 11:** Análisis de colores HTML
 - a) Descompón el color #3498DB en sus componentes RGB (en decimal)
