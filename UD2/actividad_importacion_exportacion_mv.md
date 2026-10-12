@@ -65,7 +65,6 @@ Antes de comenzar, verifica que tienes:
 - [ ] VirtualBox instalado y funcionando
 - [ ] Una máquina virtual de Arch Linux operativa
 - [ ] Al menos 20 GB de espacio libre en disco
-- [ ] Permisos de administrador (si es necesario)
 
 ### Configuración Inicial
 
@@ -82,7 +81,7 @@ Antes de comenzar, verifica que tienes:
 
 ## PARTE 3: EJERCICIOS PRÁCTICOS
 
-### 🎯 **EJERCICIO 1: Exportación de una Máquina Virtual**
+### **EJERCICIO 1: Exportación de una Máquina Virtual**
 
 #### Paso 1: Preparar la VM para exportación
 
@@ -102,7 +101,6 @@ Antes de comenzar, verifica que tienes:
 1. En VirtualBox, selecciona tu máquina virtual de Arch Linux
 
 2. Ve al menú **Archivo → Exportar servicio virtualizado**
-   - O usa el atajo: `Ctrl + E`
 
 3. **Configuración de exportación:**
    - **Formato:** Open Virtualization Format 2.0
@@ -137,12 +135,12 @@ Antes de comenzar, verifica que tienes:
 
 **Preguntas de reflexión:**
 
-a) ¿Por qué es importante apagar la VM antes de exportar?
+a) ¿Por qué es importante apagar la VM antes de exportar?\
 b) ¿Qué ventajas tiene usar formato OVA en lugar de OVF?
 
 ---
 
-### 🎯 **EJERCICIO 2: Clonado Completo de una Máquina Virtual**
+### **EJERCICIO 2: Clonado Completo de una Máquina Virtual**
 
 #### Paso 1: Crear un clon completo
 
@@ -152,10 +150,9 @@ b) ¿Qué ventajas tiene usar formato OVA en lugar de OVF?
 
 3. **Configuración del clon:**
    - **Nombre:** ArchLinux_Clon_Completo
-   - **Ruta:** Déjala por defecto (o selecciona tu ubicación preferida)
+   - **Ruta:** Tu carpeta de trabajo de exportaciones
    - **Política de dirección MAC:** Generar nuevas direcciones MAC para todos los adaptadores de red
-   - Marca **"Incluir sólo las instantáneas de la máquina actual"** (si tienes instantáneas)
-
+     
 4. Haz clic en **Siguiente**
 
 5. **Tipo de clon:**
@@ -169,7 +166,7 @@ b) ¿Qué ventajas tiene usar formato OVA en lugar de OVF?
 #### Paso 2: Verificar el clon completo
 
 1. Observa que ahora tienes dos VMs en VirtualBox:
-   - La original: _______________________
+   - La original: ArchLinux
    - El clon: ArchLinux_Clon_Completo
 
 2. **Inicia el clon completo** y verifica que funciona correctamente
@@ -184,12 +181,12 @@ b) ¿Qué ventajas tiene usar formato OVA en lugar de OVF?
 
 **Preguntas de reflexión:**
 
-a) ¿Qué similitudes observas entre el tamaño de la VM original y el clon completo?
+a) ¿Qué similitudes observas entre el tamaño de la VM original y el clon completo?\
 b) ¿Por qué es importante generar nuevas direcciones MAC?
 
 ---
 
-### 🎯 **EJERCICIO 3: Clonado Enlazado de una Máquina Virtual**
+### **EJERCICIO 3: Clonado Enlazado de una Máquina Virtual**
 
 #### Paso 1: Crear un clon enlazado
 
@@ -199,7 +196,7 @@ b) ¿Por qué es importante generar nuevas direcciones MAC?
 
 3. **Configuración del clon:**
    - **Nombre:** ArchLinux_Clon_Enlazado
-   - **Ruta:** Déjala por defecto
+   - **Ruta:** Tú carpeta de trabajo de exportaciones
    - **Política de dirección MAC:** Generar nuevas direcciones MAC para todos los adaptadores de red
 
 4. Haz clic en **Siguiente**
@@ -228,13 +225,13 @@ b) ¿Por qué es importante generar nuevas direcciones MAC?
 
 **Preguntas de reflexión:**
 
-a) ¿Qué diferencia notable observas en el tamaño entre el clon completo y el enlazado?
-b) ¿Qué pasaría si eliminas la VM original teniendo un clon enlazado?
+a) ¿Qué diferencia notable observas en el tamaño entre el clon completo y el enlazado?\
+b) ¿Qué pasaría si eliminas la VM original teniendo un clon enlazado?\
 c) ¿Cuál fue más rápido de crear? ¿Por qué?
 
 ---
 
-### 🎯 **EJERCICIO 4: Importación de una Máquina Virtual**
+### **EJERCICIO 4: Importación de una Máquina Virtual**
 
 #### Paso 1: Eliminar la VM original (simulación)
 
@@ -269,9 +266,9 @@ c) ¿Cuál fue más rápido de crear? ¿Por qué?
 4. **Configuración del servicio:**
    - Revisa la información de la VM
    - **Nombre:** Cambia el nombre a `ArchLinux_Importado`
-   - **Carpeta de máquina base:** Déjala por defecto
+   - **Carpeta de máquina base:** Carpeta de trabajo de máquinas virtuales
    - **Dirección MAC:** Política: Generar nuevas direcciones MAC para todos los adaptadores de red
-   - Puedes modificar RAM, CPU si lo deseas (opcional)
+   - Puedes modificar RAM, CPU si lo deseas
 
 5. Haz clic en **Importar**
 
@@ -291,12 +288,12 @@ c) ¿Cuál fue más rápido de crear? ¿Por qué?
 
 **Preguntas de reflexión:**
 
-a) ¿La VM importada conserva todos los archivos y configuraciones de la original?
+a) ¿La VM importada conserva todos los archivos y configuraciones de la original?\
 b) ¿Qué utilidad práctica tiene poder importar/exportar VMs?
 
 ---
 
-### 🎯 **EJERCICIO 5: Comparativa y Gestión de Snapshots (Instantáneas)**
+### **EJERCICIO 5: Comparativa y Gestión de Snapshots (Instantáneas)**
 
 #### Paso 1: Crear instantáneas
 
@@ -338,12 +335,12 @@ b) ¿Qué utilidad práctica tiene poder importar/exportar VMs?
 
 **Preguntas de reflexión:**
 
-a) ¿Qué diferencia hay entre una instantánea y un clon?
+a) ¿Qué diferencia hay entre una instantánea y un clon?\
 b) ¿Cuándo usarías una instantánea en lugar de un clon?
 
 ---
 
-### 🎯 **EJERCICIO 6: Desafío - Exportación Selectiva**
+### **EJERCICIO 6: Desafío - Exportación Selectiva**
 
 #### Objetivo
 Exportar solo el clon completo con sus instantáneas.
@@ -364,8 +361,8 @@ Exportar solo el clon completo con sus instantáneas.
 
 **Responde:**
 
-a) ¿Qué diferencia de tamaño hay entre `ArchLinux_original.ova` y `ArchLinux_Con_Snapshots.ova`?
-b) ¿Por qué existe esa diferencia?
+a) ¿Qué diferencia de tamaño hay entre `ArchLinux_original.ova` y `ArchLinux_Con_Snapshots.ova`?\
+b) ¿Por qué?
 
 ---
 
@@ -395,15 +392,9 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
 
 ## PARTE 5: LIMPIEZA Y ORGANIZACIÓN
 
-### Tarea Final
+**Organiza tus máquinas virtuales:** Elimina las VMs que no necesites. Mantén solo: `ArchLinux_Importado`
 
-1. **Organiza tus máquinas virtuales:**
-   - Elimina las VMs que no necesites
-   - Mantén solo: ArchLinux_Importado y una de las clonadas
-   
-2. **Organiza tus archivos OVA:**
-   - Mueve todos los archivos .ova a una carpeta de backups
-   - Nómbralos con fecha: `ArchLinux_2024-XX-XX.ova`
+**Organiza tus archivos OVA:** Elimina todos los archivos `.ova`.
 
 ---
 
