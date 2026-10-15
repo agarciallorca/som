@@ -1,5 +1,16 @@
 # PRÁCTICA: Creación y configuración de máquinas virtuales en VirtualBox
 
+## Objetivos 
+
+Al finalizar esta actividad, serás capaz de:
+- Crear una máquina virtual y dejarla con el sistema operativo instalado de forma desatendida.
+- Añadir y quitar discos virtuales.
+- Modificar la secuencia de arranque.
+- Modificar los recursos hardware (memoria y procesadores).
+- Configurar los modos de red NAT, puente y red interna.
+- Compartir archivos entre la máquina virtual y el anfitrión.
+- Reparar errores frecuentes, como un disco inaccesible o una máquina movida de carpeta.
+
 ---
 
 ## 1. Introducción
