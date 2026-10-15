@@ -212,7 +212,7 @@ Estos son otros problemas que te encontrarás a menudo. Todos ellos tienen soluc
 |---|---|---|
 | `FATAL: No bootable medium found! System halted.` | No hay ninguna ISO ni disco con sistema en el orden de arranque, o el disco no está conectado a la máquina | Revisar el orden de arranque y que el disco esté conectado en **Almacenamiento** (ejercicios 2 y 3) |
 | La máquina no tiene Internet | Modo de red equivocado, o la casilla *Cable conectado* está desmarcada | **Red → Adaptador 1**: comprobar el modo y, en **Avanzadas**, que *Cable conectado* esté marcado (ejercicio 5) |
-| La carpeta compartida no se ve o da "permiso denegado" | El usuario no pertenece al grupo `vboxsf` o no se ha reiniciado la sesión | `sudo usermod -aG vboxsf $USER` y volver a iniciar sesión (ejercicio 6) |
+| La carpeta compartida no se ve o da "permiso denegado" | El usuario no pertenece al grupo `vboxsf` o no se ha reiniciado la sesión | `sudo usermod -aG vboxsf $USER`, `newgrp vboxsf` y volver a iniciar sesión (ejercicio 6) |
 | Error de que VT-x o AMD-V no está disponible al arrancar | La virtualización está desactivada en la BIOS/UEFI del anfitrión | Activarla en la BIOS/UEFI del anfitrión (opciones tipo *Intel Virtualization Technology* o *SVM Mode*); avisa al profesor |
 
 ---
