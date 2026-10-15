@@ -19,7 +19,7 @@ En esta práctica aprenderás a crear una máquina virtual y a modificar su conf
 Crear una máquina virtual consiste en decidir qué "hardware" tendrá: cuánta memoria, cuántos procesadores y qué tamaño de disco. En esta práctica no nos interesa el proceso de instalación del sistema operativo, así que dejaremos que VirtualBox lo haga solo (*instalación desatendida*).
 
 1. Abre VirtualBox y pulsa **Nueva**.
-2. Configura la máquina:
+2. Establece la configuración de la máquina indicada en los siguientes pasos.
 3. En el primer bloque:
 - Nombre: `Debian 13`
 - Ruta: `D:\VIRTUALBOX_VMS\SOM_XXX`
@@ -34,7 +34,7 @@ Crear una máquina virtual consiste en decidir qué "hardware" tendrá: cuánta 
 4. En el siguiente bloque asigna **2048 MB** de memoria y **2 procesadores**.
 5. Por último crea un disco duro virtual de **50 GB**, formato **VDI** y de reserva **dinámica** (**NO** marques Reservar completamente).
 6. Finaliza el asistente. La instalación tarda unos 10-20 minutos y la máquina se reiniciará sola. Cuando aparezca el escritorio, inicia sesión con tu usuario.
-7. Por comodidad puedes poner el idioma en *Español* desde los **Ajustes** y también cambiar la distribución de teclado.
+7. Por defecto la instalación desatendida de Debian se hace en inglés y teclado US. Por comodidad puedes poner el idioma en *Español* desde los **Ajustes** y también cambiar la distribución de teclado.
 
 ### A entregar en el documento ###
 📸 **Captura 1.** Escritorio del sistema invitado funcionando.
