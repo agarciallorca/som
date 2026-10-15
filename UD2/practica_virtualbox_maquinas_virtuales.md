@@ -8,9 +8,9 @@ Una máquina virtual es un ordenador simulado por software que funciona dentro d
 
 En esta práctica aprenderás a crear una máquina virtual y a modificar su configuración, igual que harías con un ordenador real: cambiar sus discos, el orden de arranque, la memoria y los procesadores, y la conexión de red. Después compartirás archivos con el equipo anfitrión y, para terminar, aprenderás a reparar dos errores muy habituales de VirtualBox.
 
-**Material necesario:** VirtualBox 7.x, una imagen ISO de Debian 13 y unos 10 GB libres en el disco.
+**Material necesario:** VirtualBox 7.x, una imagen ISO de Debian 13 y unos 10 GB libres en el disco D:.
 
-> **Cómo se entrega:** cada vez que veas 📸 haz una captura de pantalla, y cada vez que veas ❓ responde a la pregunta con tus propias palabras. Todo se entregará en un único documento.
+> **Cómo se entrega:** cada vez que veas 📸 haz una captura de pantalla, y cada vez que veas ❓ responde a la pregunta con tus propias palabras. Todo se entregará en un **único documento de Writer**.
 
 ---
 
@@ -24,7 +24,7 @@ Crear una máquina virtual consiste en decidir qué "hardware" tendrá: cuánta 
 - Nombre: `Debian 13`
 - Ruta: `D:\VIRTUALBOX_VMS\SOM_XXX`
 - Selecciona la imagen ISO: `debian-13.7.0-amd64-DVD-1`
-- **Marca** la casilla de **proceder con la instalación desatendida**.
+- **Marca** la casilla de *proceder con la instalación desatendida*.
 3. En el siguiente bloque:
 - Usuario: tu nombre de pila
 - Contraseña: `1234`
@@ -34,7 +34,9 @@ Crear una máquina virtual consiste en decidir qué "hardware" tendrá: cuánta 
 4. En el siguiente bloque asigna **2048 MB** de memoria y **2 procesadores**.
 5. Por último crea un disco duro virtual de **50 GB**, formato **VDI** y de reserva **dinámica** (**NO** marques Reservar completamente).
 6. Finaliza el asistente. La instalación tarda unos 10-20 minutos y la máquina se reiniciará sola. Cuando aparezca el escritorio, inicia sesión con tu usuario.
+7. Por comodidad puedes poner el idioma en *Español* desde los **Ajustes** y también cambiar la distribución de teclado.
 
+### A entregar en el documento ###
 📸 **Captura 1.** Escritorio del sistema invitado funcionando.
 
 ❓ **1.1.** ¿Qué diferencia hay entre un disco de reserva **dinámica** y uno de **tamaño fijo**?
@@ -53,6 +55,7 @@ Ampliar el almacenamiento en una máquina virtual es como instalar un disco nuev
 4. En **Discos**, formatea el disco nuevo (ext4) y móntalo. Crea dentro un archivo de texto llamado `prueba.txt`.
 5. Apaga la máquina y quita el disco en **Configuración → Almacenamiento**. Arranca de nuevo y comprueba que el disco ya no aparece.
 
+### A entregar en el documento ###
 📸 **Captura 2.** La aplicación Discos mostrando el disco de 5 GB formateado.
 
 ❓ **2.1.** Después de quitar el disco de la máquina, ¿el archivo `Datos.vdi` se ha borrado? ¿Dónde puedes comprobarlo?
@@ -71,6 +74,7 @@ Al encender un ordenador, el firmware (BIOS/UEFI) busca un dispositivo del que a
 4. **Prueba 2.** Apaga, pon la **unidad óptica** en primera posición y arranca. Cuando aparezca el menú de la ISO, elige probar el sistema **sin instalar**.
 5. Apaga y deja de nuevo el disco duro en primera posición. Retira la ISO de la unidad óptica.
 
+### A entregar en el documento ###
 📸 **Captura 3.** Pantalla del orden de arranque con el disco duro en primera posición.
 
 📸 **Captura 4.** El sistema arrancado en modo *Live* desde la ISO (prueba 2).
@@ -92,10 +96,11 @@ Una ventaja de la virtualización es que se puede cambiar el hardware con unos p
    nproc      # número de procesadores
    ```
 
-2. Apaga la máquina y, en **Configuración → Sistema**, cambia la memoria a **3072 MB** y los procesadores a **1**. Si tu equipo no puede asignar esa memoria sin entrar en la zona roja del control deslizante, elige un valor distinto.
+2. Apaga la máquina y, en **Configuración → Sistema**, cambia la memoria a **3072 MB** y los procesadores a **4**. Si tu equipo no puede asignar esa memoria sin entrar en la zona roja del control deslizante, elige un valor distinto.
 3. Arranca de nuevo y repite los dos comandos.
 4. Vuelve a dejar la máquina con 2048 MB y 2 procesadores.
 
+### A entregar en el documento ###
 | Recurso | Antes del cambio | Después del cambio |
 |---|---|---|
 | Memoria RAM | | |
@@ -117,11 +122,10 @@ La tarjeta de red de una máquina virtual puede conectarse a "redes" distintas, 
 - **Adaptador puente:** la máquina se conecta directamente a la red física del anfitrión, como un equipo más.
 - **Red interna:** la máquina solo se comunica con otras máquinas virtuales de la misma red interna; queda aislada del anfitrión y de Internet.
 
-Para cada modo, apaga la máquina, abre **Configuración → Red → Adaptador 1**, cambia el modo, arranca y haz estas comprobaciones en el invitado:
+Para cada modo, apaga la máquina, abre **Configuración → Red → Adaptador 1**, cambia el modo, arranca y comprueba en el invitado si puedes navegar con **Mozilla Firefox** (p.e. intenta acceder a Aules) y la dirección IP asignada con el siguiente comando:
 
 ```bash
 ip a                     # ¿tiene dirección IP?
-ping -c 4 8.8.8.8        # ¿hay salida a Internet?
 ```
 
 En modo **adaptador puente** selecciona la interfaz de red física del anfitrión (cable o Wi-Fi). En modo **red interna** deja el nombre por defecto (`intnet`). Si en algún modo la máquina no obtiene dirección IP, anótalo en la tabla.
@@ -132,7 +136,7 @@ En modo **adaptador puente** selecciona la interfaz de red física del anfitrió
 | Adaptador puente | | |
 | Red interna | | |
 
-📸 **Captura 6.** Resultado de `ip a` y `ping` en el modo adaptador puente.
+📸 **Captura 6.** Resultado de `ip a` y navegación con Firefox en el modo adaptador puente.
 
 ❓ **5.1.** En red interna, ¿qué ocurre con la dirección IP y con el ping? ¿A qué crees que se debe?
 
@@ -152,12 +156,13 @@ Las **carpetas compartidas** permiten que una carpeta del anfitrión aparezca ta
 lsmod | grep vboxguest
 ```
 
-1. En el anfitrión, crea una carpeta llamada `Compartida`.
-2. Con la máquina apagada, abre **Configuración → Carpetas compartidas**, pulsa el icono de añadir y selecciona esa carpeta. Marca **Montaje automático** y **Hacer permanente**.
-3. Arranca la máquina. Para tener permisos sobre la carpeta, añade tu usuario al grupo `vboxsf`, cierra sesión y vuelve a entrar:
+1. En el anfitrión, crea una carpeta llamada `Compartida` en el directorio `D:\VIRTUALBOX_VMS\SOM_XXX`.
+2. Con la máquina apagada, abre **Configuración → Carpetas compartidas**, pulsa el icono de añadir y selecciona esa carpeta. Marca **Automontar** y establece el punto de montaje a `/media/compartida`.
+3. Arranca la máquina. Para tener permisos sobre la carpeta, añade tu usuario al grupo `vboxsf`, actualiza el grupo, cierra sesión y vuelve a entrar:
 
    ```bash
    sudo usermod -aG vboxsf $USER
+   newgrp vboxsf
    ```
 
 4. La carpeta aparecerá en `/media/sf_Compartida`. Crea un archivo `desde_anfitrion.txt` en el anfitrión y otro `desde_invitado.txt` en el invitado. Comprueba que ambos se ven desde los dos lados.
@@ -185,7 +190,7 @@ VirtualBox no guarda los discos ni las máquinas "dentro" del programa: lo que g
 ### Parte B. Máquina inaccesible por moverla de carpeta
 
 1. Apaga la máquina y cierra VirtualBox por completo.
-2. En el explorador de archivos, **mueve la carpeta entera de la máquina** (`SMR-NombreApellido`, que contiene el archivo `.vbox` y el disco `.vdi`) a otra ubicación, por ejemplo Documentos. Por defecto está en la carpeta `VirtualBox VMs` de tu usuario.
+2. En el explorador de archivos, **mueve la carpeta entera de la máquina** (`Debian 13`, que contiene el archivo `.vbox` y el disco `.vdi`) a otra ubicación, por ejemplo Documentos.
 3. Abre VirtualBox. La máquina aparecerá marcada como **Inaccesible**, con un icono de aviso, y no podrás iniciarla.
 4. Repárala:
    - Haz clic derecho sobre la máquina y elige **Quitar**. En la ventana que aparece elige **Solo quitar**. **No elijas eliminar todos los archivos**, porque borrarías la máquina de verdad.
@@ -228,24 +233,3 @@ Entrega **un único documento** con tus datos, las **9 capturas** numeradas, las
 | Carpeta compartida funcionando (ejercicio 6) | 10 % |
 | Reparación de errores (ejercicio 7) | 10 % |
 | Respuestas y presentación del documento | 10 % |
-
----
-
-## Anexo para el profesorado: orientaciones
-
-*(Elimina esta sección antes de entregar la práctica al alumnado).*
-
-- **Instalación desatendida.** Conviene probarla antes en un equipo del aula, porque la detección automática depende de la versión de VirtualBox y de la ISO. Si la ISO no se reconoce, la opción aparece desactivada. Si prefieres no esperar a la instalación, entrega la máquina ya instalada y empieza en el ejercicio 2.
-- **1.1.** Dinámico: el archivo crece según se usa. Fijo: reserva todo el espacio desde el inicio y su rendimiento es más estable.
-- **1.2.** El archivo solo ocupa el espacio realmente usado, porque el disco es dinámico.
-- **2.1 y 2.2.** Quitar es desconectar el disco de la máquina (el archivo `.vdi` sigue en el anfitrión y en el Administrador de medios virtuales); eliminar es borrar el archivo y perder los datos.
-- **3.1.** El firmware solo consulta el orden de prioridad: si el primer dispositivo tiene un sistema de arranque válido, no llega a mirar los demás.
-- **3.2.** Poner el disco duro primero en el orden de arranque o retirar la ISO de la unidad óptica.
-- **4.1.** El anfitrión necesita recursos para funcionar él mismo; si se los quita todos, el rendimiento de ambos sistemas se degrada.
-- **4.2.** Memoria y procesadores no se pueden cambiar en caliente, porque el hardware virtual se define al arrancar la máquina.
-- **5.1.** Sin servidor DHCP en la red interna no hay dirección IP automática, y sin salida a Internet el ping falla.
-- **5.2.** Solo descargas: NAT. Servidor accesible desde el aula: adaptador puente.
-- **6.1.** Los archivos están en el disco del anfitrión, así que eliminar la máquina virtual no los borra.
-- **7.1 y 7.2.** VirtualBox guarda un registro con la ruta de cada disco y máquina; si el archivo cambia de sitio sin que él lo sepa, la ruta queda obsoleta. *Solo quitar* elimina la máquina del listado pero deja sus archivos; eliminar todos los archivos borra la máquina y su disco.
-- **Ejercicio 7 (preparación).** Conviene probarlo antes en el aula: el texto exacto de los mensajes y la posición de la opción **Mover** pueden variar según la versión de VirtualBox. Si el alumnado ha borrado `Datos.vdi` en el ejercicio 2, basta con que cree un disco nuevo de 1 GB. El error de VT-x/AMD-V depende de la BIOS del equipo y normalmente no se podrá reproducir en el aula: se incluye solo como referencia.
-- **Tabla de red esperable:** NAT (IP privada tipo 10.0.2.x, Internet sí), puente (IP de la red física, Internet sí si la red del centro lo permite) y red interna (sin IP automática, sin Internet).
