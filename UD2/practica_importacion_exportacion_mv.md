@@ -1,4 +1,4 @@
-# ACTIVIDAD PRÁCTICA: IMPORTACIÓN, CLONADO Y EXPORTACIÓN DE MÁQUINAS VIRTUALES
+# PRÁCTICA: Importación, clonado y exportación de máquinas virtuales
 
 ## Objetivos de la Actividad
 
@@ -11,7 +11,7 @@ Al finalizar esta actividad, serás capaz de:
 
 ---
 
-## PARTE 1: CONCEPTOS FUNDAMENTALES
+## 1. Conceptos fundamentales
 
 ### ¿Qué es la Exportación de Máquinas Virtuales?
 
@@ -57,7 +57,7 @@ La **importación** es el proceso de cargar una máquina virtual desde un archiv
 
 ---
 
-## PARTE 2: PREPARACIÓN DEL ENTORNO
+## 2. Preparación del entorno
 
 ### Requisitos Previos
 
@@ -74,27 +74,20 @@ Antes de comenzar, verifica que tienes:
    - Verifica que funciona correctamente (enciéndela y apágala)
 
 3. **Crea una carpeta de trabajo**
-   - Ubicación: `D:\#tu_usuario#\Exportaciones_VM`
+   - Ubicación: `D:\VIRTUALBOX_VMS\SOM_XXX\Exportaciones_VM`
    - Aquí guardarás las exportaciones
 
 ---
 
-## PARTE 3: EJERCICIOS PRÁCTICOS
+## 3. Ejercicios prácticos
 
 ### **EJERCICIO 1: Exportación de una Máquina Virtual**
 
 #### Paso 1: Preparar la VM para exportación
 
-1. **Apaga completamente** tu máquina virtual de Arch Linux
+**Apaga completamente** tu máquina virtual de Arch Linux
    - No la suspendas, debe estar apagada
    - Verifica en VirtualBox que el estado es "Apagada"
-
-2. **Limpia la VM (opcional pero recomendado)**
-   - Si la VM está encendida, puedes ejecutar:
-   ```bash
-   sudo pacman -Sc    # Limpia caché de paquetes
-   sudo journalctl --vacuum-time=1d  # Limpia logs antiguos
-   ```
 
 #### Paso 2: Exportar la VM
 
@@ -114,7 +107,7 @@ Antes de comenzar, verifica que tienes:
    - **Nombre:** ArchLinux_Exportado
    - **Producto:** Arch Linux VM
    - **Versión:** 1.0
-   - **Descripción:** "Máquina virtual de Arch Linux para prácticas de SO"
+   - **Descripción:** "Máquina virtual de Arch Linux para prácticas de SOM"
    - Puedes dejar los demás campos como están
 
 6. Haz clic en **Exportar**
@@ -402,9 +395,7 @@ Trabajas en un proyecto y necesitas probar código en diferentes ramas, pero tod
 
 **Debes entregar:**
 
-**Documento de respuestas** con:
-   - Todas las preguntas de reflexión respondidas
-   - Casos prácticos resueltos
+**Documento de respuestas en Writer** con todas las preguntas de reflexión respondidas y los casos prácticos resueltos.
 
 ---
 
