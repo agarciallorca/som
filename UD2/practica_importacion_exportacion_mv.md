@@ -1,6 +1,6 @@
 # PRÁCTICA: Importación, clonado y exportación de máquinas virtuales
 
-## Objetivos de la Actividad
+## Objetivos
 
 Al finalizar esta actividad, serás capaz de:
 - Exportar una máquina virtual a formato OVA/OVF
