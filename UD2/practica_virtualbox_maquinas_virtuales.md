@@ -149,7 +149,7 @@ En modo **adaptador puente** selecciona la interfaz de red física del anfitrió
 
 📸 **Captura 6.** Resultado de `ip a` y navegación con Firefox en el modo adaptador puente.
 
-❓ **5.1.** En red interna, ¿qué ocurre con la dirección IP y con el ping? ¿A qué crees que se debe?
+❓ **5.1.** En red interna, ¿qué ocurre con la dirección IP? ¿A qué crees que se debe?
 
 ❓ **5.2.** ¿Qué modo elegirías para cada caso? Justifica la respuesta.
    - Una máquina de pruebas que solo necesita descargar actualizaciones.
