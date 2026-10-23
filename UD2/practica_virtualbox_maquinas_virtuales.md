@@ -176,7 +176,7 @@ lsmod | grep vboxguest
    newgrp vboxsf
    ```
 
-4. La carpeta aparecerá en `/media/sf_Compartida`. Crea un archivo `desde_anfitrion.txt` en el anfitrión y otro `desde_invitado.txt` en el invitado. Comprueba que ambos se ven desde los dos lados.
+4. La carpeta aparecerá en `/media/compartida`. Crea un archivo `desde_anfitrion.txt` en el anfitrión y otro `desde_invitado.txt` en el invitado. Comprueba que ambos se ven desde los dos lados.
 
 📸 **Captura 7.** Explorador de archivos del invitado mostrando la carpeta compartida con los dos archivos.
 
