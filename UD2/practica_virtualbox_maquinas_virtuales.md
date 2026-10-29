@@ -52,7 +52,7 @@ Crear una máquina virtual consiste en decidir qué "hardware" tendrá: cuánta 
 
 ❓ **1.1.** ¿Qué diferencia hay entre un disco de reserva **dinámica** y uno de **tamaño fijo**?
 
-❓ **1.2.** Busca el archivo `.vdi` en el anfitrión. ¿Cuánto ocupa? ¿Por qué no ocupa los 25 GB?
+❓ **1.2.** Busca el archivo `.vdi` en el anfitrión. ¿Cuánto ocupa? ¿Por qué no ocupa los 50 GB?
 
 ---
 
