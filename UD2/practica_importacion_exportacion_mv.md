@@ -357,8 +357,8 @@ Exportar solo el clon completo con sus instantáneas.
 a) ¿Qué diferencia de tamaño hay entre `ArchLinux_original.ova` y `ArchLinux_Con_Snapshots.ova`?\
 b) ¿Por qué?
 
----
 -->
+---
 
 ## PARTE 4: CASOS PRÁCTICOS
 
