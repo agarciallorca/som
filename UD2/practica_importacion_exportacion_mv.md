@@ -333,7 +333,7 @@ b) ¿Cuándo usarías una instantánea en lugar de un clon?
 
 ---
 
-### **EJERCICIO 6: Desafío - Exportación Selectiva**
+~~### **EJERCICIO 6: Desafío - Exportación Selectiva**
 
 #### Objetivo
 Exportar solo el clon completo con sus instantáneas.
@@ -355,7 +355,7 @@ Exportar solo el clon completo con sus instantáneas.
 **Responde:**
 
 a) ¿Qué diferencia de tamaño hay entre `ArchLinux_original.ova` y `ArchLinux_Con_Snapshots.ova`?\
-b) ¿Por qué?
+b) ¿Por qué?~~
 
 ---
 
