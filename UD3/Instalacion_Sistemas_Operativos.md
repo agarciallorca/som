@@ -2,7 +2,7 @@
 
 **RA 2:** Instala sistemas operativos, relacionando sus características con el hardware del equipo y el software de aplicación.
 
-Instalar un sistema operativo no consiste en pulsar «Siguiente» hasta que termine. Es un proceso con decisiones previas (¿sirve este equipo?, ¿qué sistema conviene?), una fase de preparación, una instalación propiamente dicha y un trabajo posterior (actualizar, comprobar, documentar). Este documento recorre ese proceso en el mismo orden en que se hace en la vida real, y cada apartado indica entre paréntesis el criterio de evaluación que cubre.
+Instalar un sistema operativo no consiste en pulsar «Siguiente» hasta que termine. Es un proceso con decisiones previas (¿sirve este equipo?, ¿qué sistema conviene?), una fase de preparación, una instalación propiamente dicha y un trabajo posterior (actualizar, comprobar, documentar). Este documento recorre ese proceso en el mismo orden en que se hace en la vida real.
 
 ---
 
