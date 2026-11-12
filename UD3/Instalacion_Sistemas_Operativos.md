@@ -1,12 +1,12 @@
 # Instalación de sistemas operativos
 
-**Módulo:** Sistemas Operativos Monopuesto (SMR) · **RA 2:** Instala sistemas operativos, relacionando sus características con el hardware del equipo y el software de aplicación.
+**RA 2:** Instala sistemas operativos, relacionando sus características con el hardware del equipo y el software de aplicación.
 
 Instalar un sistema operativo no consiste en pulsar «Siguiente» hasta que termine. Es un proceso con decisiones previas (¿sirve este equipo?, ¿qué sistema conviene?), una fase de preparación, una instalación propiamente dicha y un trabajo posterior (actualizar, comprobar, documentar). Este documento recorre ese proceso en el mismo orden en que se hace en la vida real, y cada apartado indica entre paréntesis el criterio de evaluación que cubre.
 
 ---
 
-## 1. Verificar la idoneidad del hardware (criterio a)
+## 1. Verificar la idoneidad del hardware
 
 Antes de instalar nada hay que comprobar que el equipo es capaz de ejecutar el sistema que queremos. Cada sistema operativo publica sus **requisitos mínimos** y, aunque menos visibles, unos **requisitos recomendados**. Los mínimos indican con qué se puede arrancar el sistema; los recomendados, con qué se trabaja con comodidad. Un equipo que cumple justo el mínimo funcionará, pero lento, y se quedará obsoleto enseguida.
 
@@ -22,7 +22,7 @@ Una buena práctica es **comprobar el hardware real antes de instalar**: en Wind
 
 > Las cifras concretas de requisitos cambian con cada versión. Conviene consultarlas siempre en la web oficial del fabricante en lugar de memorizarlas.
 
-## 2. Seleccionar el sistema operativo (criterio b)
+## 2. Seleccionar el sistema operativo
 
 Elegir sistema es un ejercicio de **ajustar necesidades y restricciones**. No hay un sistema «mejor» en abstracto, sino uno más adecuado para un contexto. Los factores a considerar son:
 
@@ -35,7 +35,7 @@ Elegir sistema es un ejercicio de **ajustar necesidades y restricciones**. No ha
 
 Un caso práctico para razonar: una pequeña asesoría quiere renovar cinco equipos que usan un programa de contabilidad solo disponible para Windows. Aunque una distribución Linux saldría gratis, la decisión razonable es Windows. Si el mismo despacho solo necesitara navegador y ofimática, Linux pasaría a ser una opción muy competitiva. La respuesta correcta depende de los requisitos, y la justificación es lo que se evalúa.
 
-## 3. Elaborar un plan de instalación (criterio c)
+## 3. Elaborar un plan de instalación
 
 Un plan de instalación es un documento breve que recoge **qué se va a hacer, en qué orden y qué se hará si algo falla**. En un equipo personal puede parecer exagerado, pero en un aula con treinta equipos, o en una empresa, es lo que separa una instalación ordenada de un desastre.
 
@@ -52,7 +52,7 @@ Un plan razonable incluye:
 
 Cuando hay que instalar muchos equipos iguales, el plan suele contemplar también **métodos de instalación desatendida o por clonación de imagen**, que ahorran tiempo y garantizan que todos los equipos queden idénticos.
 
-## 4. Configurar los parámetros básicos de la instalación (criterio d)
+## 4. Configurar los parámetros básicos de la instalación
 
 Durante el asistente de instalación hay que tomar una serie de decisiones. Las más importantes son:
 
@@ -63,13 +63,13 @@ Durante el asistente de instalación hay que tomar una serie de decisiones. Las 
 - El **esquema de particiones**: *MBR*, heredado de la BIOS clásica y con limitaciones, o *GPT*, asociado a UEFI y sin esas limitaciones. El esquema debe ser coherente con el modo de arranque del equipo.
 - La **partición de arranque**: en equipos UEFI existe una pequeña partición del sistema (*EFI System Partition*, ESP) donde residen los gestores de arranque.
 
-En Linux es frecuente separar la partición del sistema (`/`) de la de los datos de los usuarios (`/home`), de modo que se pueda reinstalar el sistema sin perder los datos. También suele crearse un área de **intercambio** (*swap*), que el sistema usa como apoyo cuando se agota la RAM. En Windows el asistente suele crear automáticamente las particiones auxiliares que necesita.
+En Linux es frecuente separar la partición del sistema (`/`) de la de los datos de los usuarios (`/home`), de modo que se pueda reinstalar el sistema sin perder los datos. En equipos con poca RAM suele crearse una partición de **intercambio** (*swap*), que el sistema usa como apoyo cuando se agota la RAM. En Windows el asistente suele crear automáticamente las particiones auxiliares que necesita.
 
 **Cuentas de usuario.** Se crea al menos un usuario con su contraseña. Conviene trabajar con un usuario sin privilegios de administrador y recurrir a los permisos elevados solo cuando haga falta, igual que se aplica el principio de mínimo privilegio en cualquier sistema.
 
 **Nombre del equipo y red.** El nombre del equipo debe seguir la nomenclatura de la organización, y la configuración de red (automática por DHCP o manual) se ajusta al entorno.
 
-## 5. Configurar un gestor de arranque (criterio e)
+## 5. Configurar un gestor de arranque
 
 El **gestor de arranque** es el pequeño programa que el firmware ejecuta al encender el equipo y cuya misión es **cargar el sistema operativo** en memoria. Cuando solo hay un sistema instalado casi no se nota; cuando hay varios, el gestor de arranque es quien presenta el menú para elegir entre ellos.
 
@@ -84,7 +84,7 @@ El caso que más enseña es el **arranque dual** (*dual boot*): dos sistemas ins
 
 Configurar el gestor de arranque significa, por ejemplo, decidir **qué sistema arranca por defecto**, **cuánto tiempo espera el menú** antes de arrancarlo y **en qué orden** se muestran las opciones. También se incluye la configuración del **orden de dispositivos de arranque** en el firmware, que es lo que permite arrancar desde el USB para realizar la instalación.
 
-## 6. Describir las incidencias de la instalación (criterio f)
+## 6. Describir las incidencias de la instalación
 
 Las instalaciones no siempre salen bien a la primera, y un técnico competente sabe **diagnosticar, resolver y documentar** lo ocurrido. Documentar es una parte profesional del trabajo: la incidencia resuelta hoy será la que alguien vuelva a encontrar dentro de seis meses.
 
@@ -101,7 +101,7 @@ Algunas incidencias frecuentes:
 
 Para **describir** una incidencia conviene seguir siempre el mismo esquema: *qué ocurrió* (el síntoma, con el mensaje de error si lo hay), *en qué momento*, *cuál fue la causa* y *cómo se resolvió*. Hay que anotar también lo que se probó y no funcionó, porque ahorra tiempo en el futuro.
 
-## 7. Respetar las normas de utilización del software: licencias (criterio g)
+## 7. Respetar las normas de utilización del software: licencias
 
 Cuando alguien instala un programa no se hace dueño de él: obtiene el **derecho de usarlo** bajo unas condiciones, que son las de la **licencia**. Usar software sin respetar su licencia es una infracción legal, y en un entorno profesional puede acarrear sanciones a la empresa.
 
@@ -118,7 +118,7 @@ Conviene distinguir los grandes tipos:
 
 Las licencias se materializan en la práctica mediante **claves de producto**, **activación** y **contratos**. Una organización seria mantiene un **inventario de licencias** que permita saber qué se ha comprado, para cuántos equipos y cuándo caduca. Cumplir las normas también significa leer y aceptar el **acuerdo de licencia** que aparece durante la instalación, en lugar de pulsar «Acepto» sin más.
 
-## 8. Actualizar el sistema operativo (criterio h)
+## 8. Actualizar el sistema operativo
 
 Un sistema recién instalado **no está terminado**: las imágenes de instalación se preparan semanas o meses antes de que las usemos, y en ese tiempo han aparecido correcciones. Actualizar inmediatamente después de instalar y mantener el sistema al día es una de las tareas de seguridad más eficaces.
 
@@ -137,7 +137,7 @@ Un último aspecto es el **fin del soporte**: cuando un sistema deja de recibir 
 
 ---
 
-## 9. Instalación masiva: clonación de equipos (criterios c, d y h)
+## 9. Instalación masiva: clonación de equipos
 
 Todo lo anterior describe la instalación de **un** equipo. Pero en un aula con treinta ordenadores, en una oficina que renueva su parque informático o en un taller que prepara equipos para entregar a clientes, repetir el asistente de instalación treinta veces es lento y, además, poco fiable: cada instalación manual puede salir con alguna pequeña diferencia (un programa olvidado, una opción distinta). Para estos casos se usan **procedimientos de instalación masiva**, y el más extendido es la **clonación**.
 
