@@ -26,7 +26,7 @@ Elegir sistema es un ejercicio de **ajustar necesidades y restricciones**. No ha
 
 - **Uso previsto del equipo:** puesto de ofimática, equipo de diseño, servidor doméstico, aula de formación, equipo antiguo que se quiere reaprovechar.
 - **Hardware disponible:** un equipo con pocos recursos se beneficia de distribuciones ligeras; un equipo moderno admite cualquier opción.
-- **Software de aplicación necesario:** si la empresa depende de una aplicación que solo existe para Windows, ese dato condiciona todo lo demás. Es el sentido de la segunda parte del enunciado del RA: relacionar el sistema con el *software de aplicación*.
+- **Software de aplicación necesario:** si la empresa depende de una aplicación que solo existe para Windows, ese dato condiciona todo lo demás.
 - **Coste y licencias:** sistemas de pago, gratuitos o de código abierto (se desarrolla en el apartado 7).
 - **Soporte y ciclo de vida:** cuánto tiempo recibirá actualizaciones de seguridad. Un sistema sin soporte es un riesgo, porque deja de recibir parches. Por eso en entornos profesionales se prefieren las versiones de **soporte extendido (LTS)**, que se mantienen durante años.
 - **Conocimientos del usuario:** el coste de formación y de soporte también cuenta.
