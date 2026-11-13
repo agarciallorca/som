@@ -39,7 +39,7 @@ Esta práctica está diseñada para hacerse sin ayuda directa. Por eso cada fase
 
 ### Equipo anfitrión
 
-Necesitas un ordenador con al menos **8 GB de RAM** (le cederás 4 GB a la MV), un procesador con la **virtualización activada en la BIOS/UEFI** (se llama VT-x en Intel y AMD-V o SVM en AMD) y unos **60 GB de disco libre**. El disco virtual será de 80 GB, pero se crea con tamaño dinámico, es decir, solo ocupa en el equipo real el espacio que realmente se va usando (al terminar, entre 25 y 35 GB aproximadamente).
+Necesitas un ordenador con al menos **8 GB de RAM** (le cederás 4 GB a la MV), un procesador con la **virtualización activada en la BIOS/UEFI** (se llama VT-x en Intel y AMD-V o SVM en AMD) y unos **60 GB de disco libre**. El disco virtual será de 500 GB, pero se crea con tamaño dinámico, es decir, solo ocupa en el equipo real el espacio que realmente se va usando (al terminar, entre 25 y 35 GB aproximadamente).
 
 Si el equipo no cumple los requisitos, díselo al profesor antes de empezar y no intentes forzar la instalación con menos recursos.
 
@@ -81,7 +81,7 @@ Responde en el informe, con tus palabras y en un párrafo para cada punto:
 
 ### 4.3. Esquema de particiones
 
-El disco virtual tendrá **80 GB**. Windows se instalará primero y ocupará unos **50 GB**; el resto quedará sin asignar para que Debian lo use después. Dibuja o describe un esquema con el orden de las particiones previsto (partición de arranque EFI, partición de Windows, partición raíz de Debian, swap…) y explica **por qué Windows se instala antes que Linux** y no al revés. Pista: piensa en qué hace el instalador de Windows con el gestor de arranque que encuentra en el disco.
+El disco virtual tendrá **500 GB**. Windows se instalará primero y ocupará unos **250 GB**; el resto quedará sin asignar para que Debian lo use después. Dibuja o describe un esquema con el orden de las particiones previsto (partición de arranque EFI, partición de Windows, partición raíz de Debian, swap…) y explica **por qué Windows se instala antes que Linux** y no al revés. Pista: piensa en qué hace el instalador de Windows con el gestor de arranque que encuentra en el disco.
 
 ### Punto de control 0
 
@@ -102,7 +102,7 @@ Crea la máquina virtual con *Máquina → Nueva*. La práctica trata de instala
 | Tipo / versión | Microsoft Windows / Windows 11 (64-bit) |
 | Memoria base | 4096 MB |
 | Procesadores | 2 |
-| Disco duro virtual | 80 GB, formato VDI, **tamaño dinámico** (no marques «Pre-Allocate Full Size») |
+| Disco duro virtual | 500 GB, formato VDI, **tamaño dinámico** (no marques «Reservar completamente») |
 
 Cuando termines el asistente, abre *Configuración* y comprueba tú mismo, sin fiarte de que el asistente lo haya hecho, estos ajustes:
 
@@ -132,7 +132,7 @@ Sigue el asistente tomando estas decisiones, que debes anotar para el informe:
 2. **Clave de producto:** elige **«No tengo clave de producto»**. No uses claves de procedencia dudosa.
 3. **Edición:** la que hayas decidido en la fase 0.
 4. **Tipo de instalación:** *Personalizada: instalar solo Windows (avanzado)*.
-5. **Particionado:** verás un único bloque de 80 GB sin asignar. Pulsa **Nuevo** y escribe un tamaño de **51200 MB** (50 GB). Windows avisará de que puede crear particiones adicionales para los archivos del sistema; acepta. Instala en la partición principal que se haya creado, **no** en el espacio restante. Haz la **captura C2** de esta pantalla antes de continuar.
+5. **Particionado:** verás un único bloque de 500 GB sin asignar. Pulsa **Nuevo** y escribe un tamaño de **256000 MB** (250 GB). Windows avisará de que puede crear particiones adicionales para los archivos del sistema; acepta. Instala en la partición principal que se haya creado, **no** en el espacio restante. Haz la **captura C2** de esta pantalla antes de continuar.
 6. **Configuración inicial (OOBE):** nombre del equipo `WIN11-xxx` y usuario `som_xxx`. Si el asistente se empeña en pedirte una cuenta Microsoft, consulta el apartado 11.
 
 Los reinicios durante la instalación son normales. Si tras alguno vuelve a aparecer el mensaje de «pulsar una tecla», **no pulses nada** y deja que arranque desde el disco.
@@ -146,7 +146,7 @@ Con el escritorio ya disponible:
 3. **Comprobaciones:**
    - Ejecuta `winver` (**captura C3**, con `verificacion.txt` abierto o el comando `type verificacion.txt` en una consola, y el nombre del equipo visible).
    - Ejecuta `msinfo32` y localiza «Modo de BIOS» y «Estado de arranque seguro» (**captura C4**).
-   - Ejecuta `diskmgmt.msc` y comprueba que quedan unos 30 GB **sin asignar** al final del disco (**captura C5**).
+   - Ejecuta `diskmgmt.msc` y comprueba que quedan unos 250 GB **sin asignar** al final del disco (**captura C5**).
 4. **Apaga** la MV por completo (no la suspendas) y **toma una instantánea** llamada `01_Windows_instalado`.
 
 ### Punto de control 2
@@ -291,7 +291,7 @@ Entregarás **un único informe en PDF** con el nombre `SOM_Apellido_Nombre_MVdu
 | Código | Qué debe mostrar |
 |---|---|
 | C1 | Configuración de la MV: EFI y TPM 2.0 |
-| C2 | Instalador de Windows con la partición de 50 GB creada |
+| C2 | Instalador de Windows con la partición de 250 GB creada |
 | C3 | `winver` y `verificacion.txt` en Windows, con el nombre del equipo |
 | C4 | `msinfo32`: modo de BIOS y arranque seguro |
 | C5 | Administración de discos con el espacio sin asignar |
