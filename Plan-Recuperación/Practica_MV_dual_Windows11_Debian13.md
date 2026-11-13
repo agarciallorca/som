@@ -1,8 +1,5 @@
 # Práctica: máquina virtual de arranque dual con Windows 11 y Debian 13
 
-**Módulo:** Sistemas Operativos Monopuesto (SMR) · **Resultado de aprendizaje:** RA 2, instalación de sistemas operativos
-**Modalidad:** trabajo autónomo individual · **Dedicación estimada:** 5-6 horas, repartidas en 2 o 3 sesiones
-
 ---
 
 ## 1. Presentación
@@ -11,20 +8,7 @@ Imagina que eres el técnico de una pequeña empresa de formación. El responsab
 
 El trabajo no consiste solo en instalar. Consiste en **planificar** antes de tocar nada, **instalar** tomando decisiones razonadas, **comprobar** que todo funciona y **documentar** el proceso de modo que otra persona pueda repetirlo. Esa documentación es lo que se evalúa.
 
-Esta práctica está diseñada para hacerse sin ayuda directa. Por eso cada fase termina con un **punto de control**: una serie de comprobaciones que te dicen si puedes seguir adelante o si debes corregir algo antes. Si un punto de control no se cumple, no avances: consulta la guía de problemas del apartado 11 y, si el problema persiste, busca información en las fuentes del apartado 14 y deja constancia de ello en tu informe.
-
-### Relación con los criterios de evaluación del RA 2
-
-| Criterio | Dónde se trabaja |
-|---|---|
-| a) Idoneidad del hardware | Fase 0 (análisis de requisitos) |
-| b) Selección del sistema operativo | Fase 0 (justificación de ediciones y entorno) |
-| c) Plan de instalación | Fase 0 (plan y esquema de particiones) |
-| d) Parámetros básicos de la instalación | Fases 2 y 3 (idioma, usuarios, particiones, red, software) |
-| e) Gestor de arranque | Fase 4 (GRUB y Windows Boot Manager) |
-| f) Incidencias de la instalación | Fase 5 (registro de incidencias) |
-| g) Normas de utilización del software (licencias) | Apartado 10 |
-| h) Actualización del sistema operativo | Fase 5 (actualización de ambos sistemas) |
+Esta práctica está diseñada para hacerse sin ayuda directa. Por eso cada fase termina con un **punto de control**: una serie de comprobaciones que te dicen si puedes seguir adelante o si debes corregir algo antes. Si un punto de control no se cumple, no avances: consulta la guía de problemas del apartado 11 y, si el problema persiste, consulta con el profesor.
 
 ---
 
@@ -69,7 +53,7 @@ Los enlaces concretos están en el apartado 14. Descarga las dos ISO antes de co
 
 ---
 
-## 4. Fase 0: análisis y plan de instalación (criterios a, b y c)
+## 4. Fase 0: análisis y plan de instalación
 
 Antes de crear nada, tienes que decidir qué vas a instalar y con qué recursos. Esta fase no se hace en VirtualBox, se hace en tu informe.
 
@@ -138,7 +122,7 @@ Una BIOS clásica y un firmware UEFI arrancan de forma distinta. La BIOS clásic
 
 ---
 
-## 6. Fase 2: instalación de Windows 11 (criterio d)
+## 6. Fase 2: instalación de Windows 11
 
 Arranca la MV. El instalador de Windows puede mostrar durante un instante el mensaje *«Press any key to boot from CD or DVD»*: pulsa una tecla.
 
@@ -174,7 +158,7 @@ Con el escritorio ya disponible:
 
 ---
 
-## 7. Fase 3: instalación de Debian 13 en el espacio libre (criterio d)
+## 7. Fase 3: instalación de Debian 13 en el espacio libre
 
 Con la MV apagada, en *Configuración → Almacenamiento* sustituye la ISO de Windows por la de Debian (haz clic en el disco de la unidad óptica y elige el fichero). **No crees una MV nueva**: Debian se instala en el mismo disco, junto a Windows.
 
@@ -196,7 +180,7 @@ Cuando termine, reinicia. VirtualBox suele expulsar la ISO automáticamente; si 
 
 ### Tras la instalación
 
-Inicia sesión en Debian y abre una terminal. Haz las siguientes comprobaciones y **actualiza el sistema** (criterio h):
+Inicia sesión en Debian y abre una terminal. Haz las siguientes comprobaciones y **actualiza el sistema**:
 
 ```bash
 cat /etc/os-release
@@ -208,14 +192,6 @@ sudo apt full-upgrade
 
 Crea `verificacion.txt` con tu nombre y la fecha y muéstralo con `cat verificacion.txt`. La **captura C10** debe incluir la salida de `cat /etc/os-release`, `hostname` y `lsblk -f` en la misma terminal. La **captura C12** muestra el resultado de la actualización (por ejemplo, `apt list --upgradable` sin paquetes pendientes tras terminar).
 
-Opcionalmente, instala las Guest Additions también aquí. Necesitas primero las herramientas de compilación y, después, ejecutar el instalador desde la imagen que insertes con *Dispositivos → Insertar imagen de CD de las Guest Additions*:
-
-```bash
-sudo apt install build-essential dkms linux-headers-$(uname -r)
-```
-
-Una vez montado el CD (el punto de montaje depende de la versión, mira en el explorador de archivos), ejecuta `sudo sh VBoxLinuxAdditions.run` desde esa carpeta y reinicia.
-
 ### Punto de control 3
 
 - [ ] Debian arranca con tu nombre de equipo y tu usuario.
@@ -224,7 +200,7 @@ Una vez montado el CD (el punto de montaje depende de la versión, mira en el ex
 
 ---
 
-## 8. Fase 4: comprobación del arranque dual (criterio e)
+## 8. Fase 4: comprobación del arranque dual
 
 Apaga la MV por completo y vuelve a encenderla. Debes ver el **menú de GRUB**, en el que aparecen, como mínimo, *Debian GNU/Linux* y *Windows Boot Manager*. Haz la **captura C9** de ese menú. Arranca después cada sistema, uno cada vez, y comprueba que funcionan.
 
@@ -256,7 +232,7 @@ Toma una instantánea final llamada `02_Dual_completo`.
 
 ---
 
-## 9. Fase 5: registro de incidencias y actualizaciones (criterios f y h)
+## 9. Fase 5: registro de incidencias y actualizaciones
 
 Durante la práctica habrás encontrado errores, avisos o decisiones dudosas. Reúnelas en una tabla en el informe. Es tan importante como la instalación en sí: un técnico que documenta sus problemas y sus soluciones ahorra tiempo al siguiente.
 
@@ -267,7 +243,7 @@ Debes incluir **al menos dos incidencias**. Si de verdad no has tenido ninguna, 
 
 ---
 
-## 10. Reflexión sobre licencias (criterio g)
+## 10. Reflexión sobre licencias
 
 Responde en el informe, con un párrafo breve por pregunta:
 
@@ -309,7 +285,6 @@ Entregarás **un único informe en PDF** con el nombre `SOM_Apellido_Nombre_MVdu
 6. **Arranque dual** (fase 4): descripción del funcionamiento y respuestas a las preguntas.
 7. **Registro de incidencias y actualizaciones** (fase 5).
 8. **Reflexión sobre licencias** (apartado 10).
-9. **Bibliografía y fuentes consultadas.**
 
 ### Capturas obligatorias
 
